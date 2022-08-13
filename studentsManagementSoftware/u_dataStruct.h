@@ -13,13 +13,10 @@ typedef struct fullName {
 } fullName_T;
 
 
-
-
 typedef struct student
 {
     uint32_t ID;
     fullName_T fullName;
-
 }student_T;
 
 

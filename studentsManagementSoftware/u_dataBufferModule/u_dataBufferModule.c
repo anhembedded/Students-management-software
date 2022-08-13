@@ -3,3 +3,6 @@
 //
 
 #include "u_dataBufferModule.h"
+
+student_T dataBuffer[1000];
+fullName_T fullNameBuffer[1000];
