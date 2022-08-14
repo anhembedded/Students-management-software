@@ -16,8 +16,6 @@ typedef struct birthYear {
     uint32_t data;
 }birthYear_T;
 
-
-
 typedef struct student
 {
     uint32_t ID;
