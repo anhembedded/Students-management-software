@@ -6,13 +6,10 @@
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_DATABUFFERMODULE_H
 #include "studentsManagementSoftware/u_dataStruct.h"
 
-extern student_T dataBuffer[];
-extern fullName_T fullNameBuffer_ptr[];
-typedef struct st_Name
-{
-    char m_name[50];
-}st_Name_T;
+extern student_T *dataBuffer_Heap_Head;
+extern studentInputBuffer_T inputBuffer_T;
 
-extern st_Name_T fullNameBuffer_data[1000];
+void dataBuffer_HeapInit();
+
 
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_U_DATABUFFERMODULE_H
