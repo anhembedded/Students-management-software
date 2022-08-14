@@ -21,17 +21,17 @@ int main() {
     studentTestData[3].ID = 3;
     studentTestData[4].ID = 4;
 
-    studentTestData[0].birthYear = (birthYear_T){.ID = 0,.data = 1990};
-    studentTestData[1].birthYear = (birthYear_T){.ID = 1,.data = 1991};
-    studentTestData[2].birthYear = (birthYear_T){.ID = 2,.data = 1992};
-    studentTestData[3].birthYear = (birthYear_T){.ID = 3,.data = 1993};
-    studentTestData[4].birthYear = (birthYear_T){.ID = 4,.data = 1994};
+    studentTestData[0].birthYear = (birthYear_T){.studentObjAddress = &studentTestData[0],.data = 1990};
+    studentTestData[1].birthYear = (birthYear_T){.studentObjAddress = &studentTestData[1],.data = 1991};
+    studentTestData[2].birthYear = (birthYear_T){.studentObjAddress = &studentTestData[2],.data = 1992};
+    studentTestData[3].birthYear = (birthYear_T){.studentObjAddress = &studentTestData[3],.data = 1993};
+    studentTestData[4].birthYear = (birthYear_T){.studentObjAddress = &studentTestData[4],.data = 1994};
 
-    studentTestData[0].fullName = (fullName_T){.ID = 0, .data = "Zero"};
-    studentTestData[1].fullName = (fullName_T){.ID = 1, .data = "one"};
-    studentTestData[2].fullName = (fullName_T){.ID = 2, .data = "tow"};
-    studentTestData[3].fullName = (fullName_T){.ID = 3, .data = "three"};
-    studentTestData[4].fullName = (fullName_T){.ID = 4, .data = "f4"};
+    studentTestData[0].fullName = (fullName_T){.studentObjAddress = &studentTestData[0], .data = "Zero"};
+    studentTestData[1].fullName = (fullName_T){.studentObjAddress = &studentTestData[1], .data = "one"};
+    studentTestData[2].fullName = (fullName_T){.studentObjAddress = &studentTestData[2], .data = "tow"};
+    studentTestData[3].fullName = (fullName_T){.studentObjAddress = &studentTestData[3], .data = "three"};
+    studentTestData[4].fullName = (fullName_T){.studentObjAddress = &studentTestData[4], .data = "f4"};
 
     ob1.next = &ob2;
     ob2.next = &ob3;

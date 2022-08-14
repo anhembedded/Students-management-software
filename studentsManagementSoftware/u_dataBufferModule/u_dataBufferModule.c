@@ -3,7 +3,12 @@
 //
 
 #include "u_dataBufferModule.h"
+#include "stdlib.h"
 
-student_T *dataBuffer_Heap;
-fullName_T fullNameBuffer_ptr[1000];
-st_Name_T fullNameBuffer_data[1000];
+student_T *dataBuffer_Heap_Head = NULL;
+
+void dataBuffer_HeapInit() {
+
+}
+
+studentInputBuffer_T inputBuffer_T;

@@ -7,10 +7,5 @@
 
 void initStudent(student_T *obj, uint32_t ID, char *name, uint32_t birthYear) {
 
-    obj->ID = ID;
-    obj->birthYear.ID = ID;
-    obj->birthYear.data = birthYear;
-    obj->fullName.ID = ID;
-    obj->fullName.data = (char *)(&fullNameBuffer_data[ID]);
 
 }
