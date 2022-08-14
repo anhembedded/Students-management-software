@@ -18,20 +18,20 @@ typedef struct birthYear {
 typedef struct department
 {
     uint32_t ID;
-    uint32_t data;
+    char * data;
 } department_T;
 
 typedef struct  homeTown
 {
     uint32_t ID;
-    uint32_t data;
+    char * data;
 }  homeTown_T;
 
 
 typedef struct  majors
 {
     uint32_t ID;
-    uint32_t data;
+    char * data;
 } majors_T;
 
 typedef struct cumulativeScore

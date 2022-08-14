@@ -30,3 +30,15 @@ void list_traverse(dataBuffer_heapNode_T *headNode) {
     }
 }
 
+void insertAfter(dataBuffer_heapNode_T *prev_node, student_T new_data) {
+    if (prev_node == NULL) {
+        printf("the given previous node cannot be NULL");
+        return;
+    }
+
+    dataBuffer_heapNode_T* new_node = (dataBuffer_heapNode_T*)malloc(sizeof(dataBuffer_heapNode_T));
+    new_node->data = new_data;
+    new_node->next = prev_node->next;
+    prev_node->next = new_node;
+}
+
