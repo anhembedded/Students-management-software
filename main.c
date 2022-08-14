@@ -4,7 +4,6 @@
 #include "studentsManagementSoftware/u_dataStruct.h"
 #include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
 
-
 int main() {
     printf("Hello, World!\n");
     printf("This is Testing branch!\n");
