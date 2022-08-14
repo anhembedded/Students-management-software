@@ -7,6 +7,8 @@
 
 #include <stdint.h>
 #define INPUT_BUFFER_SIZE 50u
+
+/*
 typedef struct fullName {
     void * studentObjAddress;
     char * data;
@@ -45,18 +47,18 @@ typedef struct entryScores
     uint32_t data;
 
 } entryScores_T;
-
+*/
 
 typedef struct student
 {
     uint32_t ID;
-    fullName_T fullName;
-    birthYear_T birthYear;
-    department_T department;
-    homeTown_T homeTown_T;
-    majors_T  majors;
-    cumulativeScore_T cumulativeScore;
-    entryScores_T entryScores;
+    char * fullName;
+    uint32_t birthYear;
+    char * department;
+    char * homeTown_T;
+    char *  majors;
+    uint32_t cumulativeScore;
+    uint32_t entryScores;
 }student_T;
 
 typedef struct studentInputBuffer
