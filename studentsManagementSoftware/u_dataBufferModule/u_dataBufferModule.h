@@ -9,6 +9,7 @@
 extern student_T *dataBuffer_Heap_Head;
 extern studentInputBuffer_T inputBuffer_T;
 
+void dataBuffer_HeapInit();
 
 
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_U_DATABUFFERMODULE_H
