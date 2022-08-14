@@ -8,41 +8,40 @@
 #include <stdint.h>
 #define INPUT_BUFFER_SIZE 50u
 typedef struct fullName {
-    uint32_t ID;
+    void * studentObjAddress;
     char * data;
 } fullName_T;
 typedef struct birthYear {
-    uint32_t ID;
+    void * studentObjAddress;
     uint32_t data;
 }birthYear_T;
 typedef struct department
 {
-    uint32_t ID;
+    void * studentObjAddress;
     char * data;
 } department_T;
 
 typedef struct  homeTown
 {
-    uint32_t ID;
+    void * studentObjAddress;
     char * data;
 }  homeTown_T;
 
-
 typedef struct  majors
 {
-    uint32_t ID;
+    void * studentObjAddress;
     char * data;
 } majors_T;
 
 typedef struct cumulativeScore
 {
-    uint32_t ID;
+    void * studentObjAddress;
     uint32_t data;
 } cumulativeScore_T;
 
 typedef struct entryScores
 {
-    uint32_t ID;
+    void * studentObjAddress;
     uint32_t data;
 
 } entryScores_T;
