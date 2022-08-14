@@ -5,13 +5,13 @@
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_FILEPATH_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_FILEPATH_H
 
-extern const char * fullNamePath;
-extern const char * birthYearPath;
-extern const char * cumulativeScorePath;
-extern const char * departmentPath;
-extern const char * entryScoresPath;
-extern const char * homeTownPath;
-extern const char * majorsPath;
+extern const char * filePath_fullName;
+extern const char * filePath_birthYear;
+extern const char * filePath_cumulativeScore;
+extern const char * filePath_department;
+extern const char * filePath_entryScores;
+extern const char * filePath_homeTown;
+extern const char * filePath_majors;
 
 
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_FILEPATH_H
