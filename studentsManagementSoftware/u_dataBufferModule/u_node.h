@@ -14,6 +14,7 @@ typedef struct dataBuffer_HeapNode
 
 void initList(dataBuffer_heapNode_T **listPtr, dataBuffer_heapNode_T *head);
 void list_traverse(dataBuffer_heapNode_T *headNode);
+void insertAfter(dataBuffer_heapNode_T* prev_node, student_T new_data);
 void insertAtBeginning( dataBuffer_heapNode_T** head_ref, student_T new_data);
 void insertAtEnd( dataBuffer_heapNode_T** head_ref, student_T new_data);
 void deleteNode( dataBuffer_heapNode_T** head_ref, uint32_t student_T_ID);
