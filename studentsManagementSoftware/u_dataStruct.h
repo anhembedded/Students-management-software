@@ -11,12 +11,18 @@ typedef struct fullName {
     uint32_t ID;
     char * data;
 } fullName_T;
+typedef struct birthYear {
+    uint32_t ID;
+    uint32_t data;
+}birthYear_T;
+
 
 
 typedef struct student
 {
     uint32_t ID;
     fullName_T fullName;
+    birthYear_T birthYear;
 }student_T;
 
 
