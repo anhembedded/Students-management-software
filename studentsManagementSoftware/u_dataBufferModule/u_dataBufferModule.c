@@ -4,6 +4,5 @@
 
 #include "u_dataBufferModule.h"
 
-student_T *dataBuffer_Heap;
-fullName_T fullNameBuffer_ptr[1000];
-st_Name_T fullNameBuffer_data[1000];
+student_T *dataBuffer_Heap_Head;
+studentInputBuffer_T inputBuffer_T;
