@@ -5,14 +5,6 @@
 #include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
 #include "studentsManagementSoftware/u_dataBufferModule/u_node.h"
 
-dataBuffer_heapNode_T *listHead;
-dataBuffer_heapNode_T ob1;
-dataBuffer_heapNode_T ob2;
-dataBuffer_heapNode_T ob3;
-dataBuffer_heapNode_T ob4;
-dataBuffer_heapNode_T ob5;
-
-student_T studentTestData[5];
 
 
 student_T A;
