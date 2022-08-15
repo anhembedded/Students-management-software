@@ -6,6 +6,8 @@
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_NODE_H
 #include "studentsManagementSoftware/u_dataStruct.h"
 
+
+
 typedef struct studentNode
 {
     student_T data;
@@ -27,9 +29,9 @@ studentNode_T * node_createNodeData(student_T newData);
 void node_deleteNode(studentNode_T * node);
 studentNode_T *  node_addNodeAsHeadData(studentNode_T *priNode, student_T newData);
 studentNode_T *  node_addNodeAsHead(studentNode_T *priNode);
-studentNode_T * node_addNodeAsTail(studentNode_T *priNode, student_T newData);
-
-
+studentNode_T * node_addNodeAsTailData(studentNode_T *priNode, student_T newData);
+studentNode_T* node_addNodeAsTail(studentNode_T* priNode);
+studentNode_T* node_insertBetween(studentNode_T* prevNode, studentNode_T* affterNode);
 void list_traverse(dataBuffer_heapNode_T *headNode);
 
 

@@ -26,10 +26,12 @@ studentNode_T A;
 int main() {
 
 
-    list_initList(&myBuffer, 3);
+    list_initList(&myBuffer, 1);
+    varWatch = list_size(&myBuffer);
+    
+    //list_insertBack(&myBuffer);
     varWatch = list_size(&myBuffer);
 
-    iterator = list_back(&myBuffer);
 
     printf("Hello, World!\n");
     printf("This is Testing branch!\n");

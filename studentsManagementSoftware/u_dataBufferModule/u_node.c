@@ -20,13 +20,13 @@ void list_traverse(dataBuffer_heapNode_T *headNode) {
 }
 studentNode_T *node_createNodeData(student_T newData) {
     studentNode_T *temp = malloc(sizeof(student_T));; // tạo mới một node
-    temp->next = NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
+    temp->next = (studentNode_T*)NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
     temp->data = newData;  // gán giá trị cho node
     return temp;
 }
-studentNode_T *node_createNode( ) {
+studentNode_T *node_createNode() {
     studentNode_T *temp = malloc(sizeof(student_T));; // tạo mới một node
-    temp->next = NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
+    temp->next = (studentNode_T*)NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
     return temp;
 }
 studentNode_T *  node_addNodeAsHead(studentNode_T *priNode) {
@@ -43,11 +43,29 @@ studentNode_T *  node_addNodeAsHeadData(studentNode_T *priNode, student_T newDat
     return newNode;
 }
 
-studentNode_T *node_addNodeAsTail(studentNode_T *priNode, student_T newData) {
+studentNode_T *node_addNodeAsTailData(studentNode_T *priNode, student_T newData) {
     studentNode_T *newNode;
     newNode = node_createNode(newData);
     priNode->next = newNode;
     return newNode;
+
+}
+studentNode_T* node_addNodeAsTail(studentNode_T* priNode) {
+    studentNode_T* newNode;
+    newNode = node_createNode();
+    priNode->next = newNode;
+    newNode->next = NULL;
+    return newNode;
+
+}
+
+studentNode_T* node_insertBetween(studentNode_T* prevNode, studentNode_T* affterNode)
+{
+    
+    studentNode_T* temp =  node_createNode();
+    prevNode->next = temp;
+    temp->next = affterNode;
+    return temp;
 
 }
 
