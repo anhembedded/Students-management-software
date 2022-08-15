@@ -6,22 +6,33 @@
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_NODE_H
 #include "studentsManagementSoftware/u_dataStruct.h"
 
+typedef struct studentNode
+{
+    student_T data;
+    struct studentNode *next;
+}studentNode_T;
+
+
+
 typedef struct dataBuffer_HeapNode
 {
     student_T data;
     struct dataBuffer_HeapNode *next;
 }dataBuffer_heapNode_T;
 
-void initList(dataBuffer_heapNode_T **listPtr, dataBuffer_heapNode_T *head);
+
+
+studentNode_T * node_createNode();
+studentNode_T * node_createNodeData(student_T newData);
+void node_deleteNode(studentNode_T * node);
+studentNode_T *  node_addNodeAsHeadData(studentNode_T *priNode, student_T newData);
+studentNode_T *  node_addNodeAsHead(studentNode_T *priNode);
+studentNode_T * node_addNodeAsTail(studentNode_T *priNode, student_T newData);
+
+
 void list_traverse(dataBuffer_heapNode_T *headNode);
-void insertAfter(dataBuffer_heapNode_T* prev_node, student_T new_data);
-void insertAtEnd(dataBuffer_heapNode_T** head_ref, student_T new_data);
-void deleteNode( dataBuffer_heapNode_T** head_ref, uint32_t student_T_ID);
 
 
-void insertAtBeginning( dataBuffer_heapNode_T** head_ref, student_T new_data);
-void list_deleteFromBegin(dataBuffer_heapNode_T * headNode);
-void list_deleteFromEnd(dataBuffer_heapNode_T * headNode);
 
 
 

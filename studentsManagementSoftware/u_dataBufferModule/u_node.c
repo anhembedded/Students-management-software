@@ -7,19 +7,8 @@
 #include "stdlib.h"
 
 
-void initList(dataBuffer_heapNode_T **listPtr, dataBuffer_heapNode_T *head) {
-    listPtr = &head;
-}
 
-void insertAtBeginning(dataBuffer_heapNode_T **head_ref, student_T new_data) {
-    // Allocate memory to a node
-    dataBuffer_heapNode_T* new_node = (dataBuffer_heapNode_T*)malloc(sizeof(dataBuffer_heapNode_T));
-    // insert the data
-    new_node->data = new_data;
-    new_node->next = (*head_ref);
-    // Move head to new node
-    (*head_ref) = new_node;
-}
+
 
 void list_traverse(dataBuffer_heapNode_T *headNode) {
     dataBuffer_heapNode_T *temp = headNode;
@@ -29,48 +18,43 @@ void list_traverse(dataBuffer_heapNode_T *headNode) {
         temp = temp->next;
     }
 }
-
-void insertAfter(dataBuffer_heapNode_T *prev_node, student_T new_data) {
-    if (prev_node == NULL) {
-        printf("the given previous node cannot be NULL");
-        return;
-    }
-    dataBuffer_heapNode_T* new_node = (dataBuffer_heapNode_T*)malloc(sizeof(dataBuffer_heapNode_T));
-    new_node->data = new_data;
-    new_node->next = prev_node->next;
-    prev_node->next = new_node;
+studentNode_T *node_createNodeData(student_T newData) {
+    studentNode_T *temp = malloc(sizeof(student_T));; // tạo mới một node
+    temp->next = NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
+    temp->data = newData;  // gán giá trị cho node
+    return temp;
+}
+studentNode_T *node_createNode( ) {
+    studentNode_T *temp = malloc(sizeof(student_T));; // tạo mới một node
+    temp->next = NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
+    return temp;
+}
+studentNode_T *  node_addNodeAsHead(studentNode_T *priNode) {
+    studentNode_T *newNode;
+    newNode = node_createNode();
+    newNode->next = priNode;
+    return newNode;
+}
+studentNode_T *  node_addNodeAsHeadData(studentNode_T *priNode, student_T newData) {
+    studentNode_T *newNode;
+    newNode = node_createNodeData(newData);
+    newNode->next = priNode;
+    newNode->data = newData;
+    return newNode;
 }
 
-void insertAtEnd(dataBuffer_heapNode_T **head_ref, student_T new_data) {
-    dataBuffer_heapNode_T* new_node = (dataBuffer_heapNode_T*)malloc(sizeof(dataBuffer_heapNode_T));
-    dataBuffer_heapNode_T* last = *head_ref; /* used in step 5*/
-    new_node->data = new_data;
-    new_node->next = NULL;
-    if (*head_ref == NULL) {
-        *head_ref = new_node;
-        return;
-    }
-    while (last->next != NULL) last = last->next;
-    last->next = new_node;
+studentNode_T *node_addNodeAsTail(studentNode_T *priNode, student_T newData) {
+    studentNode_T *newNode;
+    newNode = node_createNode(newData);
+    priNode->next = newNode;
+    return newNode;
+
 }
 
-void deleteNode(dataBuffer_heapNode_T **head_ref, uint32_t student_T_ID) {
-    dataBuffer_heapNode_T *temp = *head_ref, *prev;
-    if (temp != NULL && temp->data.ID == student_T_ID) {
-        *head_ref = temp->next;
-        free(temp);
-        return;
-    }
-    // Find the key to be deleted
-    while (temp != NULL && temp->data.ID != student_T_ID) {
-        prev = temp;
-        temp = temp->next;
-    }
-    // If the key is not present
-    if (temp == NULL) return;
-    // Remove the node
-    prev->next = temp->next;
-    free(temp);
+void node_deleteNode(studentNode_T *node) {
+    free(node);
 }
+
+
 
 
