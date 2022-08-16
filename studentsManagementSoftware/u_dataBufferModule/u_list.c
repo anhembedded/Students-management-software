@@ -6,14 +6,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void list_init(list_T* listPtr)
+{
+    listPtr->beginElement = malloc(sizeof(listPtr->beginElement));
+    if (listPtr->beginElement == NULL)
+    {
+        printf("Erro NuLL");
+    }
+    else
+    {
+        listPtr->beginElement->next = NULL;
+    }
+   
+}
+
 void list_initList(list_T *listPtr, int32_t numberOfElements) {
 
     LIST_ITERATOR_TYPE_T iter;
     node_dataType_T temp;
         if(numberOfElements == 0)
         {
-             printf("numberOfElements not O \n");
-            listPtr->beginElement = NULL;
+             listPtr->beginElement = NULL;
              return;
         } else
         {
@@ -46,38 +59,64 @@ uint32_t list_size(list_T *list_Ptr) {
     }else
     {
         iter = list_Ptr->beginElement;
-        while(iter->next->next != NULL)
+
+        if (iter != NULL)
         {
-            sizeRes ++;
-            iter = iter->next;
+            while (iter != NULL)
+            {
+                sizeRes++;
+                iter = iter->next;
+            }
         }
-        sizeRes++;
+        else
+        {
+            printf("Erro NuLL");
+        }
+      
+        
     }
 
     return sizeRes;
 }
 
-LIST_ELEMENT_TYPE_T * list_front(list_T *list_Ptr) {
-    return list_Ptr->beginElement;
+static LIST_ELEMENT_TYPE_T * list_front(list_T *list_Ptr) {
+    if (list_Ptr == NULL)
+    {
+        printf("Erro NuLL");
+       
+    }
+    else
+    {
+        return list_Ptr->beginElement;
+    }
+   
+    
 }
 
-LIST_ELEMENT_TYPE_T * list_back(list_T *list_Ptr) {
+static LIST_ELEMENT_TYPE_T * list_back(list_T *list_Ptr) {
     LIST_ITERATOR_TYPE_T iter = list_Ptr->beginElement;
     if(list_empty(list_Ptr) == 1)
     {
         printf("numberOfElements not O \n");
     } else{
-        while(iter->next->next != NULL)
+
+        if (iter == NULL)
         {
-            iter = iter->next;
+
         }
-        iter = iter->next;
+        else {
+            while (iter->next != NULL)
+            {
+                iter = iter->next;
+            }
+        }
+       
     }
     return  iter;
 
 }
 
-void list_insertFront(list_T* list_Ptr)
+static void list_insertFront(list_T* list_Ptr)
 {
     LIST_ITERATOR_TYPE_T iter_temp = NULL;
     if (list_empty(list_Ptr))
@@ -91,12 +130,12 @@ void list_insertFront(list_T* list_Ptr)
     }
 }
 
-void list_insertBack(list_T* list_Ptr)
+static void list_insertBack(list_T* list_Ptr)
 {
     LIST_ITERATOR_TYPE_T iter_temp = NULL;
     if (list_empty(list_Ptr))
     {
-
+        printf("numberOfElements not O \n");
     }
     else
     {
@@ -105,16 +144,33 @@ void list_insertBack(list_T* list_Ptr)
     }
 }
 
-void list_insertFrontData(list_T* list_Ptr, LIST_DATA_TYPE_T newData)
+static void list_insertFrontData(list_T* list_Ptr, LIST_DATA_TYPE_T newData)
 {
+
     list_insertFront(list_Ptr);
-    list_goToPos(list_Ptr, 0)->data = newData;
+    if (list_goToPos(list_Ptr, 0) == NULL)
+    {
+        printf("Erro NuLL");
+    }
+    else
+    {
+        list_goToPos(list_Ptr, 0)->data = newData;
+    }
+   
 }
 
-void list_insertBackData(list_T* list_Ptr, LIST_DATA_TYPE_T newData)
+static void list_insertBackData(list_T* list_Ptr, LIST_DATA_TYPE_T newData)
 {
     list_insertBack(list_Ptr);
-    list_back(list_Ptr)->data = newData;
+    if (list_back(list_Ptr) == NULL)
+    {
+        printf("Erro NuLL");
+    }
+    else
+    {
+        list_back(list_Ptr)->data = newData;
+    }
+   
 }
 
 void list_insert(list_T* list_Ptr, int32_t positionOfElement)
@@ -125,7 +181,7 @@ void list_insert(list_T* list_Ptr, int32_t positionOfElement)
     sizeOfList = list_size(list_Ptr);
     if (list_empty(list_Ptr))
     {
-
+        printf("numberOfElements not O \n");
     }
     else
     {
@@ -150,7 +206,15 @@ void list_insert(list_T* list_Ptr, int32_t positionOfElement)
 void list_insertData(list_T* list_Ptr, LIST_DATA_TYPE_T data, int32_t positionOfElement)
 {
     list_insert(list_Ptr, positionOfElement);
-    list_goToPos(list_Ptr,positionOfElement)->data = data;
+    
+    if (list_goToPos(list_Ptr, positionOfElement) == NULL)
+    {
+        printf("Erro NuLL");
+    }
+    else
+    {
+        list_goToPos(list_Ptr, positionOfElement)->data = data;
+    }
 }
 
 void list_detele(list_T* list_Ptr, int32_t positionOfElement)
@@ -192,8 +256,15 @@ LIST_DATA_TYPE_T list_popBack(list_T* list_Ptr)
 
 LIST_DATA_TYPE_T list_access(list_T *list_Ptr, int32_t positionOfElement)
 {
-   
-   return list_goToPos(list_Ptr, positionOfElement)->data;
+    if (list_goToPos(list_Ptr, positionOfElement) == NULL)
+    {
+        printf("Erro NuLL");
+    }
+    else
+    {
+        return list_goToPos(list_Ptr, positionOfElement)->data;
+    }
+  
 
 }
 
@@ -213,7 +284,7 @@ LIST_ELEMENT_TYPE_T* list_goToPos(list_T* list_Ptr, int32_t positionOfElement)
     return iter;
 }
 
-LIST_ITERATOR_TYPE_T list_goToLastElement(list_T* list_Ptr)
+static LIST_ITERATOR_TYPE_T list_goToLastElement(list_T* list_Ptr)
 {
     uint32_t listSize = 0;
     LIST_ITERATOR_TYPE_T iter = NULL;
@@ -237,7 +308,10 @@ void list_pushFront(list_T* list_Ptr, LIST_DATA_TYPE_T data)
 
 void list_pushBack(list_T* list_Ptr, LIST_DATA_TYPE_T data)
 {
-
+    if (list_Ptr->beginElement == NULL)
+    {
+        list_Ptr->beginElement =   malloc(sizeof(LIST_ELEMENT_TYPE_T));
+    }
     LIST_ITERATOR_TYPE_T iter_temp = NULL;
     iter_temp =  list_back(list_Ptr);
     node_addNodeAsTailData(iter_temp,data);
@@ -254,12 +328,10 @@ LIST_DATA_TYPE_T list_popFront(list_T *list_Ptr) {
 void list_swap(list_T *list_Ptr, int32_t posA, int32_t posB) {
     LIST_DATA_TYPE_T  temp;
 
-
         temp = list_goToPos(list_Ptr,posA)->data;
 
         list_goToPos(list_Ptr,posA)->data =  list_goToPos(list_Ptr,posB)->data;
         list_goToPos(list_Ptr,posB)->data = temp;
-
 
 
 }

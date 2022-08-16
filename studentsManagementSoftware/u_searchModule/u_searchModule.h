@@ -4,5 +4,14 @@
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_SEARCHMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_SEARCHMODULE_H
+#include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
+#include <string.h>
+
+extern list_T sreach_buffer;
+
+
+void sreach_sreachString(list_T *bufferData, list_T *bufferSreach, char * theString);
+
+
 
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_U_SEARCHMODULE_H

@@ -11,14 +11,31 @@
 
 
 node_T *node_createNodeData(node_dataType_T newData) {
-    node_T *temp = malloc(sizeof(node_T));; // tạo mới một node
-    temp->data = newData;  // gán giá trị cho node
-    temp->next = NULL;
+    node_T *temp = (node_T*) malloc(sizeof(node_T)); // tạo mới một node
+    if (temp != NULL)
+    {
+        temp->data = newData;
+        temp->next = NULL;
+    }
+    else
+    {
+        printf("Erro NuLL");
+    }
+     // gán giá trị cho node
+   
     return temp;
 }
 node_T *node_createNode() {
-    node_T *temp = malloc(sizeof(node_dataType_T));; // tạo mới một node
-    temp->next = NULL;
+    node_T *temp = (node_T *) malloc(sizeof(node_dataType_T));; // tạo mới một node
+    if (temp != NULL)
+    {
+        temp->next = NULL;
+    }
+    else
+    {
+        printf("Erro NuLL");
+    }
+   
     return temp;
 }
 node_T *  node_addNodeAsHead(node_T *priNode) {
@@ -36,15 +53,10 @@ node_T *  node_addNodeAsHeadData(node_T *priNode, node_dataType_T newData) {
 }
 
 node_T *node_addNodeAsTailData(node_T *priNode, node_dataType_T newData) {
-  //  node_T *newNode;
-  //  newNode = node_createNode(newData);
-   // priNode->next = newNode;
-   // newNode->next = NULL;
+
     node_T* newNode=   node_addNodeAsTail(priNode);
     newNode->data = newData;
    return newNode;
-
-
 
 }
 node_T* node_addNodeAsTail(node_T* priNode) {

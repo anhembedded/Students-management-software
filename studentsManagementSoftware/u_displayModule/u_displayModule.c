@@ -6,10 +6,8 @@
 #include "stdio.h"
 
 void printAllBuffer_cumulativeScore(list_T *buffer) {
-
     LIST_ITERATOR_TYPE_T iter;
     iter = buffer->beginElement->next; // index 0;
-
     while(iter != NULL)
     {
         printf("%d \n", iter->data.cumulativeScore);
@@ -32,10 +30,13 @@ void printAllBuffer_fullName(list_T *buffer) {
 
 void printAllBuffer_student(list_T *buffer) {
     LIST_ITERATOR_TYPE_T iter;
+    uint32_t counter = 0;
     iter = buffer->beginElement->next; // index 0;
 
     while(iter != NULL)
     {
+       
+        printf("%d |    ", counter);
         printf("%s |    ", iter->data.fullName);
         printf("%d |    ", iter->data.birthYear);
         printf("%s |    ", iter->data.homeTown);
@@ -45,5 +46,6 @@ void printAllBuffer_student(list_T *buffer) {
         printf("%d |    ", iter->data.cumulativeScore);
         printf("\n");
         iter = iter->next;
+        counter++;
     }
 }

@@ -32,4 +32,9 @@ void sort_incr_department(list_T *buffer_ptr);
 void sort_incr_homeTown(list_T *buffer_ptr);
 void sort_incr_majors(list_T *buffer_ptr);
 
+void sort_decr_fullName(list_T *buffer_ptr);
+void sort_decr_department(list_T *buffer_ptr);
+void sort_decr_homeTown(list_T *buffer_ptr);
+void sort_decr_majors(list_T *buffer_ptr);
+
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H
