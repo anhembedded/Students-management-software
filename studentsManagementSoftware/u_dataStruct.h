@@ -55,7 +55,7 @@ typedef struct student
     char * fullName;
     uint32_t birthYear;
     char * department;
-    char * homeTown_T;
+    char * homeTown;
     char *  majors;
     uint32_t cumulativeScore;
     uint32_t entryScores;

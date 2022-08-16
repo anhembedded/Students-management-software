@@ -4,9 +4,12 @@
 
 #include "u_list.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-void list_initList(list_T *listPtr, uint32_t numberOfElements) {
+void list_initList(list_T *listPtr, int32_t numberOfElements) {
 
+    LIST_ITERATOR_TYPE_T iter;
+    node_dataType_T temp;
         if(numberOfElements == 0)
         {
              printf("numberOfElements not O \n");
@@ -15,10 +18,11 @@ void list_initList(list_T *listPtr, uint32_t numberOfElements) {
         } else
         {
              listPtr->beginElement = node_createNode(); //Frist Node = -1;
+             iter = listPtr->beginElement;
         }
         for(uint32_t i = 0; i < numberOfElements; i++)
         {
-            listPtr->beginElement = node_addNodeAsHead( listPtr->beginElement);
+            iter = node_addNodeAsTail(iter);
         }
 }
 
@@ -35,17 +39,19 @@ _Bool list_empty(list_T *list_Ptr) {
 
 uint32_t list_size(list_T *list_Ptr) {
     uint32_t sizeRes = 0;
+    LIST_ITERATOR_TYPE_T iter;
     if(list_empty(list_Ptr) == 1)
     {
         sizeRes = 0;
     }else
     {
-        list_Ptr->iterator = list_Ptr->beginElement;
-        while(list_Ptr->iterator->next != NULL)
+        iter = list_Ptr->beginElement;
+        while(iter->next->next != NULL)
         {
             sizeRes ++;
-            list_Ptr->iterator = list_Ptr->iterator->next;
+            iter = iter->next;
         }
+        sizeRes++;
     }
 
     return sizeRes;
@@ -56,17 +62,18 @@ LIST_ELEMENT_TYPE_T * list_front(list_T *list_Ptr) {
 }
 
 LIST_ELEMENT_TYPE_T * list_back(list_T *list_Ptr) {
-    list_Ptr->iterator = list_Ptr->beginElement;
+    LIST_ITERATOR_TYPE_T iter = list_Ptr->beginElement;
     if(list_empty(list_Ptr) == 1)
     {
         printf("numberOfElements not O \n");
     } else{
-        while(list_Ptr->iterator->next != NULL)
+        while(iter->next->next != NULL)
         {
-            list_Ptr->iterator = list_Ptr->iterator->next;
+            iter = iter->next;
         }
+        iter = iter->next;
     }
-    return  list_Ptr->iterator;
+    return  iter;
 
 }
 
@@ -75,13 +82,12 @@ void list_insertFront(list_T* list_Ptr)
     LIST_ITERATOR_TYPE_T iter_temp = NULL;
     if (list_empty(list_Ptr))
     {
-
+        printf("numberOfElements not O \n");
     }
     else
     {
         iter_temp = list_goToPos(list_Ptr,0);
         node_insertBetween(list_Ptr->beginElement, iter_temp);
-
     }
 }
 
@@ -99,17 +105,101 @@ void list_insertBack(list_T* list_Ptr)
     }
 }
 
+void list_insertFrontData(list_T* list_Ptr, LIST_DATA_TYPE_T newData)
+{
+    list_insertFront(list_Ptr);
+    list_goToPos(list_Ptr, 0)->data = newData;
+}
 
-LIST_DATA_TYPE_T list_access(list_T *list_Ptr, uint32_t positionOfElement) 
+void list_insertBackData(list_T* list_Ptr, LIST_DATA_TYPE_T newData)
+{
+    list_insertBack(list_Ptr);
+    list_back(list_Ptr)->data = newData;
+}
+
+void list_insert(list_T* list_Ptr, int32_t positionOfElement)
+{
+    uint32_t sizeOfList;
+    LIST_ITERATOR_TYPE_T affterIter;
+    LIST_ITERATOR_TYPE_T prevIter;
+    sizeOfList = list_size(list_Ptr);
+    if (list_empty(list_Ptr))
+    {
+
+    }
+    else
+    {
+        if (positionOfElement == 0)
+        {
+            list_insertFront(list_Ptr);
+        }
+        else if (positionOfElement == (sizeOfList - 1))
+        {
+            list_insertBack(list_Ptr);
+        }
+        else
+        {
+            prevIter = list_goToPos(list_Ptr, positionOfElement-1);
+            affterIter = list_goToPos(list_Ptr, positionOfElement);
+            node_insertBetween(prevIter, affterIter);
+        }
+
+    }
+}
+
+void list_insertData(list_T* list_Ptr, LIST_DATA_TYPE_T data, int32_t positionOfElement)
+{
+    list_insert(list_Ptr, positionOfElement);
+    list_goToPos(list_Ptr,positionOfElement)->data = data;
+}
+
+void list_detele(list_T* list_Ptr, int32_t positionOfElement)
+{
+
+    //todo: implement this
+    LIST_ITERATOR_TYPE_T iterDetele;
+    LIST_ITERATOR_TYPE_T ITER;
+    uint32_t sizeOfList = list_size(list_Ptr);
+    if (list_empty(list_Ptr))
+    {
+        //doto, Handle this excption
+        return;
+    }
+    else if (positionOfElement == sizeOfList - 1)
+    {
+        iterDetele = list_goToPos(list_Ptr, positionOfElement);
+        ITER = list_goToPos(list_Ptr, positionOfElement - 1);
+        ITER->next = NULL;
+
+        node_deleteNode(iterDetele);
+    }
+    else
+    {
+        iterDetele = list_goToPos(list_Ptr, positionOfElement);
+        ITER = list_goToPos(list_Ptr, positionOfElement - 1);
+        ITER->next = list_goToPos(list_Ptr, positionOfElement + 1);
+        node_deleteNode(iterDetele);
+    }
+}
+LIST_DATA_TYPE_T list_popBack(list_T* list_Ptr)
+{
+    LIST_DATA_TYPE_T temp;
+    uint32_t sizeOfList = list_size(list_Ptr);
+    temp = list_access(list_Ptr, sizeOfList - 1);
+    list_detele(list_Ptr,sizeOfList - 1);
+    return temp;
+}
+
+LIST_DATA_TYPE_T list_access(list_T *list_Ptr, int32_t positionOfElement)
 {
    
    return list_goToPos(list_Ptr, positionOfElement)->data;
 
 }
 
-LIST_ELEMENT_TYPE_T* list_goToPos(list_T* list_Ptr, uint32_t positionOfElement)
+LIST_ELEMENT_TYPE_T* list_goToPos(list_T* list_Ptr, int32_t positionOfElement)
 {
-    list_Ptr->iterator = list_Ptr->beginElement;
+    LIST_ITERATOR_TYPE_T iter = list_Ptr->beginElement;
     if (list_empty(list_Ptr) == 1)
     {
         printf("numberOfElements not O \n");
@@ -117,10 +207,10 @@ LIST_ELEMENT_TYPE_T* list_goToPos(list_T* list_Ptr, uint32_t positionOfElement)
     else {
         for (int64_t i = -1; i < positionOfElement; i++)
         {
-            list_Ptr->iterator = list_Ptr->iterator->next;
+            iter = iter->next;
         }
     }
-    return list_Ptr->iterator;
+    return iter;
 }
 
 LIST_ITERATOR_TYPE_T list_goToLastElement(list_T* list_Ptr)
@@ -147,8 +237,29 @@ void list_pushFront(list_T* list_Ptr, LIST_DATA_TYPE_T data)
 
 void list_pushBack(list_T* list_Ptr, LIST_DATA_TYPE_T data)
 {
-    
-    list_Ptr->iterator =  list_back(list_Ptr);
-    node_addNodeAsTail(list_Ptr->iterator);
+
+    LIST_ITERATOR_TYPE_T iter_temp = NULL;
+    iter_temp =  list_back(list_Ptr);
+    node_addNodeAsTailData(iter_temp,data);
+
+}
+
+LIST_DATA_TYPE_T list_popFront(list_T *list_Ptr) {
+
+    LIST_DATA_TYPE_T temp = list_goToPos(list_Ptr,0)->data;
+    list_detele(list_Ptr,0);
+    return temp;
+}
+
+void list_swap(list_T *list_Ptr, int32_t posA, int32_t posB) {
+    LIST_DATA_TYPE_T  temp;
+
+
+        temp = list_goToPos(list_Ptr,posA)->data;
+
+        list_goToPos(list_Ptr,posA)->data =  list_goToPos(list_Ptr,posB)->data;
+        list_goToPos(list_Ptr,posB)->data = temp;
+
+
 
 }

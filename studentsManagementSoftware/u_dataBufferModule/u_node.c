@@ -10,48 +10,45 @@
 
 
 
-void list_traverse(dataBuffer_heapNode_T *headNode) {
-    dataBuffer_heapNode_T *temp = headNode;
-    printf("\n\nList elements are - \n");
-    while(temp != NULL) {
-        printf("%d --->",temp->data.ID);
-        temp = temp->next;
-    }
-}
-studentNode_T *node_createNodeData(student_T newData) {
-    studentNode_T *temp = malloc(sizeof(student_T));; // tạo mới một node
-    temp->next = (studentNode_T*)NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
+node_T *node_createNodeData(node_dataType_T newData) {
+    node_T *temp = malloc(sizeof(node_T));; // tạo mới một node
     temp->data = newData;  // gán giá trị cho node
+    temp->next = NULL;
     return temp;
 }
-studentNode_T *node_createNode() {
-    studentNode_T *temp = malloc(sizeof(student_T));; // tạo mới một node
-    temp->next = (studentNode_T*)NULL; // node này chưa trỏ đến phần tử khác nên "next" nhận giá trị NULL
+node_T *node_createNode() {
+    node_T *temp = malloc(sizeof(node_dataType_T));; // tạo mới một node
+    temp->next = NULL;
     return temp;
 }
-studentNode_T *  node_addNodeAsHead(studentNode_T *priNode) {
-    studentNode_T *newNode;
+node_T *  node_addNodeAsHead(node_T *priNode) {
+    node_T *newNode;
     newNode = node_createNode();
     newNode->next = priNode;
     return newNode;
 }
-studentNode_T *  node_addNodeAsHeadData(studentNode_T *priNode, student_T newData) {
-    studentNode_T *newNode;
+node_T *  node_addNodeAsHeadData(node_T *priNode, node_dataType_T newData) {
+    node_T *newNode;
     newNode = node_createNodeData(newData);
     newNode->next = priNode;
     newNode->data = newData;
     return newNode;
 }
 
-studentNode_T *node_addNodeAsTailData(studentNode_T *priNode, student_T newData) {
-    studentNode_T *newNode;
-    newNode = node_createNode(newData);
-    priNode->next = newNode;
-    return newNode;
+node_T *node_addNodeAsTailData(node_T *priNode, node_dataType_T newData) {
+  //  node_T *newNode;
+  //  newNode = node_createNode(newData);
+   // priNode->next = newNode;
+   // newNode->next = NULL;
+    node_T* newNode=   node_addNodeAsTail(priNode);
+    newNode->data = newData;
+   return newNode;
+
+
 
 }
-studentNode_T* node_addNodeAsTail(studentNode_T* priNode) {
-    studentNode_T* newNode;
+node_T* node_addNodeAsTail(node_T* priNode) {
+    node_T* newNode;
     newNode = node_createNode();
     priNode->next = newNode;
     newNode->next = NULL;
@@ -59,20 +56,16 @@ studentNode_T* node_addNodeAsTail(studentNode_T* priNode) {
 
 }
 
-studentNode_T* node_insertBetween(studentNode_T* prevNode, studentNode_T* affterNode)
+node_T* node_insertBetween(node_T* prevNode, node_T* affterNode)
 {
     
-    studentNode_T* temp =  node_createNode();
+    node_T* temp =  node_createNode();
     prevNode->next = temp;
     temp->next = affterNode;
     return temp;
 
 }
 
-void node_deleteNode(studentNode_T *node) {
+void node_deleteNode(node_T *node) {
     free(node);
 }
-
-
-
-

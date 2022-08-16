@@ -7,10 +7,7 @@
 #include<stdio.h>
 #include "studentsManagementSoftware/u_dataStruct.h"
 
-FILE  *name;
-FILE *birthYear;
 
-void writeSingleStudent(student_T *studentObj_ptr);
 
 
 
