@@ -5,6 +5,7 @@
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H
 
+
 #include "studentsManagementSoftware/u_dataBufferModule/u_list.h"
 #include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
 #include <stdio.h>
@@ -36,5 +37,10 @@ void sort_decr_fullName(list_T *buffer_ptr);
 void sort_decr_department(list_T *buffer_ptr);
 void sort_decr_homeTown(list_T *buffer_ptr);
 void sort_decr_majors(list_T *buffer_ptr);
+
+
+
+
+
 
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H

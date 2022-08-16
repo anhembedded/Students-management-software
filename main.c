@@ -15,6 +15,7 @@
 
 
 
+
 student_T studentTestData[10];
 studentInputBuffer_T studentBuffer = {.fullName="TranHoangAnh",.department = "Cokhi",.homeTown="LongAn",.majors = "CoDienTu"};
 list_T  myBuffer;
@@ -93,7 +94,8 @@ int main() {
 
    init();
   
-   studentTestData[9] = input_allocateData(&studentBuffer);
+  
+ studentTestData[9] = input_allocateData(&studentBuffer);
    list_pushBack(&myBuffer, studentTestData[9]);
     return 0;
 }
