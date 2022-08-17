@@ -14,5 +14,11 @@ void add_addStudent(list_T *buffer)
 	studentemp = input_allocateData(&studentInputBufferTemp);
 
 	list_pushBack(buffer, studentemp);
+}
 
+void add_addStudentData(list_T *buffer, student_T *newStudent)
+{
+	student_T studentemp;
+	studentemp = input_allocateDataStudent_T(newStudent);
+	list_pushBack(buffer, studentemp);
 }
