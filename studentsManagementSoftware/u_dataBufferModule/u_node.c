@@ -69,7 +69,6 @@ node_T *node_addNodeAsTail(node_T *priNode)
 
 node_T *node_insertBetween(node_T *prevNode, node_T *affterNode)
 {
-
     node_T *temp = node_createNode();
     prevNode->next = temp;
     temp->next = affterNode;
