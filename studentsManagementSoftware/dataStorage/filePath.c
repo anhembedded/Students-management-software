@@ -4,10 +4,11 @@
 
 #include "filePath.h"
 
-const char * filePath_fullName = "../studentsManagementSoftware/dataStorage/fullName.txt";
+const char * filePath_fullName = "E:\\Project\\Fsoft Embedded training course\\Students - management - software\\studentsManagementSoftware\\dataStorage\\fullName.txt";
 const char * filePath_birthYear = "../studentsManagementSoftware/dataStorage/birthYear.txt";
-const char * filePath_cumulativeScore = "../studentsManagementSoftware/dataStorage/cumulativeScore.txt";
-const char * filePath_department ="../studentsManagementSoftware/dataStorage/department.txt";
-const char * filePath_entryScores = "../studentsManagementSoftware/dataStorage/entryScores.txt";
-const char * filePath_homeTown = "../studentsManagementSoftware/dataStorage/homeTown.txt";
-const char * filePath_majors = "../studentsManagementSoftware/dataStorage/majors.txt";
+const char * filePath_cumulativeScore = "../studentsManagementSoftware/dataStorage/cumulativeScore.dat";
+const char * filePath_department ="../studentsManagementSoftware/dataStorage/department.dat";
+const char * filePath_entryScores = "../studentsManagementSoftware/dataStorage/entryScores.dat";
+const char * filePath_homeTown = "../studentsManagementSoftware/dataStorage/homeTown.dat";
+const char * filePath_majors = "../studentsManagementSoftware/dataStorage/majors.dat";
+

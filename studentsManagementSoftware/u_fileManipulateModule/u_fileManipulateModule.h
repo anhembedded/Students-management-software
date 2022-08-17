@@ -4,15 +4,14 @@
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_FILEMANIPULATEMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_FILEMANIPULATEMODULE_H
-#include<stdio.h>
+#include <stdio.h>
 #include "studentsManagementSoftware/u_dataStruct.h"
+#include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
+#include "studentsManagementSoftware/dataStorage/filePath.h"
 
-FILE  *name;
-FILE *birthYear;
+void fileM_loadData(list_T *buffer);
+void fileM_saveData(list_T *buffer);
 
-void writeSingleStudent(student_T *studentObj_ptr);
+void writeStringToFileDat(char *theString);
 
-
-
-
-#endif //STUDENTS_MANAGEMENT_SOFTWARE_U_FILEMANIPULATEMODULE_H
+#endif // STUDENTS_MANAGEMENT_SOFTWARE_U_FILEMANIPULATEMODULE_H

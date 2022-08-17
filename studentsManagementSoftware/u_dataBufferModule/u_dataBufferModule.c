@@ -5,10 +5,16 @@
 #include "u_dataBufferModule.h"
 #include "stdlib.h"
 
-student_T *dataBuffer_Heap_Head = NULL;
+studentInputBuffer_T inputBuffer_T;
 
-void dataBuffer_HeapInit() {
+void buffer_Init(buffer_T *bf_ptr)
+{
 
+    list_initList(bf_ptr, 6);
 }
 
-studentInputBuffer_T inputBuffer_T;
+uint32_t buffer_size(buffer_T *bf)
+{
+    return list_size(bf);
+    ;
+}

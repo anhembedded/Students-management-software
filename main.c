@@ -1,47 +1,80 @@
-#include <stdio.h>
-#include "u_lib/common.h"
-#include "studentsManagementSoftware/u_addModule/u_addModule.h"
-#include "studentsManagementSoftware/u_dataStruct.h"
-#include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
-#include "studentsManagementSoftware/u_dataBufferModule/u_node.h"
 
 
-
-student_T A;
-
-
-int main() {
-
-
+/*
+ * Created on Wed Aug 17 2022
+ *
+ *
+ */
 
 
-    studentTestData[0].ID = 0;
-    studentTestData[1].ID = 1;
-    studentTestData[2].ID = 2;
-    studentTestData[3].ID = 3;
-    studentTestData[4].ID = 4;
+#include "main.h"
 
 
+student_T studentTestData[10];
+list_T mainBuffer;
+list_T sreachBuffer;
 
-    ob1.next = &ob2;
-    ob2.next = &ob3;
-    ob3.next = &ob4;
-    ob4.next = &ob5;
-    ob5.next = NULL;
+// JUST a Test Function
+void init()
+{
 
-    ob1.data = studentTestData[0];
-    ob2.data = studentTestData[1];
-    ob3.data = studentTestData[2];
-    ob4.data = studentTestData[3];
-    ob5.data = studentTestData[4];
+   studentTestData[0].fullName = "Bich Tuyen";
+   studentTestData[1].fullName = "Viet Nga";
+   studentTestData[2].fullName = "Thu Trinh";
+   studentTestData[3].fullName = "Kim Thoai";
+   studentTestData[4].fullName = "Thanh Sang";
 
+   studentTestData[0].cumulativeScore = 32;
+   studentTestData[1].cumulativeScore = 133;
+   studentTestData[2].cumulativeScore = 24;
+   studentTestData[3].cumulativeScore = 234;
+   studentTestData[4].cumulativeScore = 4;
 
-    initList(&listHead,&ob1 );
-    list_traverse(&ob1);
+   studentTestData[0].homeTown = "Long An";
+   studentTestData[1].homeTown = "Hai Phong";
+   studentTestData[2].homeTown = "HCM";
+   studentTestData[3].homeTown = "Ha Noi";
+   studentTestData[4].homeTown = "Bac Can";
 
+   studentTestData[0].department = "[BT].department";
+   studentTestData[1].department = "[VN].department";
+   studentTestData[2].department = "[TT].department";
+   studentTestData[3].department = "[KT].department";
+   studentTestData[4].department = "[TS].department";
 
-    printf("Hello, World!\n");
-    printf("This is Testing branch!\n");
+   studentTestData[0].majors = "[BT].majors";
+   studentTestData[1].majors = "[VN].majors";
+   studentTestData[2].majors = "[TT].majors";
+   studentTestData[3].majors = "[KT].majors";
+   studentTestData[4].majors = "[TS].majors";
 
-    return 0;
+   studentTestData[0].entryScores = 23;
+   studentTestData[1].entryScores = 22;
+   studentTestData[2].entryScores = 2;
+   studentTestData[3].entryScores = 43;
+   studentTestData[4].entryScores = 12;
+
+   studentTestData[0].birthYear = 2003;
+   studentTestData[1].birthYear = 1997;
+   studentTestData[2].birthYear = 1996;
+   studentTestData[3].birthYear = 2005;
+   studentTestData[4].birthYear = 2009;
+
+   list_initList(&mainBuffer, 0);
+   list_initList(&sreachBuffer, 0);
+
+   for (int i = 0; i <= 4; i++)
+   {
+      add_addStudentData(&mainBuffer, &studentTestData[i]);
+   }
 }
+
+int main()
+{
+   init();
+
+   menu_mainMenu(&mainBuffer, &sreachBuffer);
+
+   return 0;
+}
+

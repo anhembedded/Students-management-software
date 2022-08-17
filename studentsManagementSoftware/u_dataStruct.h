@@ -52,26 +52,25 @@ typedef struct entryScores
 typedef struct student
 {
     uint32_t ID;
-    char * fullName;
+    char *fullName;
     uint32_t birthYear;
-    char * department;
-    char * homeTown_T;
-    char *  majors;
+    char *department;
+    char *homeTown;
+    char *majors;
     uint32_t cumulativeScore;
     uint32_t entryScores;
-}student_T;
+} student_T;
 
 typedef struct studentInputBuffer
 {
     uint32_t ID;
     char fullName[INPUT_BUFFER_SIZE];
     uint32_t birthYear;
-    char * department[INPUT_BUFFER_SIZE];
-    char * homeTown_T[INPUT_BUFFER_SIZE];
-    char * majors[INPUT_BUFFER_SIZE];
+    char department[INPUT_BUFFER_SIZE];
+    char homeTown[INPUT_BUFFER_SIZE];
+    char majors[INPUT_BUFFER_SIZE];
     uint32_t cumulativeScore;
     uint32_t entryScores;
-}studentInputBuffer_T;
+} studentInputBuffer_T;
 
-
-#endif //STUDENTS_MANAGEMENT_SOFTWARE_U_DATASTRUCT_H
+#endif // STUDENTS_MANAGEMENT_SOFTWARE_U_DATASTRUCT_H
