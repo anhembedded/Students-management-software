@@ -98,7 +98,7 @@ void list_clearAllNode(list_T *list_Ptr)
     }
 }
 
-static LIST_ELEMENT_TYPE_T *list_front(list_T *list_Ptr)
+ LIST_ELEMENT_TYPE_T *list_front(list_T *list_Ptr)
 {
     if (list_Ptr == NULL)
     {
@@ -257,7 +257,7 @@ void list_detele(list_T *list_Ptr, int32_t positionOfElement)
         iterDetele = list_goToPos(list_Ptr, positionOfElement);
         ITER = list_goToPos(list_Ptr, positionOfElement - 1);
         ITER->next = list_goToPos(list_Ptr, positionOfElement + 1);
-        // todo: Free mem, not Compl;
+       
         node_deleteNode(iterDetele);
     }
 }

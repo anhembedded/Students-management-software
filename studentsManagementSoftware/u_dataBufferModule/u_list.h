@@ -9,7 +9,7 @@
 
 typedef node_T LIST_ELEMENT_TYPE_T;
 typedef node_dataType_T LIST_DATA_TYPE_T;
-typedef LIST_ELEMENT_TYPE_T *LIST_ITERATOR_TYPE_T;
+typedef LIST_ELEMENT_TYPE_T* LIST_ITERATOR_TYPE_T;
 
 typedef struct u_list
 {
@@ -33,7 +33,7 @@ LIST_DATA_TYPE_T list_popBack(list_T *list_Ptr);
 LIST_DATA_TYPE_T list_access(list_T *list_Ptr, int32_t positionOfElement);
 LIST_ELEMENT_TYPE_T *list_goToPos(list_T *list_Ptr, int32_t positionOfElement);
 
-static LIST_ELEMENT_TYPE_T *list_front(list_T *list_Ptr);
+LIST_ELEMENT_TYPE_T *list_front(list_T *list_Ptr);
 LIST_ELEMENT_TYPE_T *list_back(list_T *list_Ptr);
 static void list_insertFront(list_T *list_Ptr);
 static void list_insertBack(list_T *list_Ptr);

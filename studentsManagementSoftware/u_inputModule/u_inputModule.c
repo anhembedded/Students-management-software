@@ -35,22 +35,22 @@ student_T input_allocateData(studentInputBuffer_T *stdBuffer_ptr)
 	sizeOfString = strlen(stdBuffer_ptr->fullName);
 	temp.fullName = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	strcpy(temp.fullName, stdBuffer_ptr->fullName);
+	(void)strcpy(temp.fullName, stdBuffer_ptr->fullName);
 
 	sizeOfString = strlen(stdBuffer_ptr->department);
 	temp.department = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	strcpy(temp.department, stdBuffer_ptr->department);
+	(void)strcpy(temp.department, stdBuffer_ptr->department);
 
 	sizeOfString = strlen(stdBuffer_ptr->homeTown);
 	temp.homeTown = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	strcpy(temp.homeTown, stdBuffer_ptr->homeTown);
+	(void)strcpy(temp.homeTown, stdBuffer_ptr->homeTown);
 
 	sizeOfString = strlen(stdBuffer_ptr->majors);
 	temp.majors = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	strcpy(temp.majors, stdBuffer_ptr->majors);
+	(void)strcpy(temp.majors, stdBuffer_ptr->majors);
 
 	temp.birthYear = stdBuffer_ptr->birthYear;
 	temp.cumulativeScore = stdBuffer_ptr->cumulativeScore;
@@ -61,6 +61,7 @@ student_T input_allocateData(studentInputBuffer_T *stdBuffer_ptr)
 
 student_T input_allocateDataStudent_T(student_T *std_ptr)
 {
+	// todo: use memCpy
 	student_T temp;
 
 	uint32_t sizeOfString = 0;
