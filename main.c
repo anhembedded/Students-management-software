@@ -6,7 +6,9 @@
  *
  */
 
+
 #include "main.h"
+
 
 student_T studentTestData[10];
 list_T mainBuffer;
@@ -70,7 +72,9 @@ void init()
 int main()
 {
    init();
+
    menu_mainMenu(&mainBuffer, &sreachBuffer);
 
    return 0;
 }
+
