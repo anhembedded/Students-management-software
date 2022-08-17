@@ -143,6 +143,7 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 		case 2:
 			// Todo: get Substring -- MENU
 			// Todo: implement this - SREACH
+           // sreach_sreach_entryScores(mainBuffer, sreach_buffer, number);
 			break;
 		case 3:
 			// SearchFullName();
@@ -151,14 +152,16 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 		case 4:
 			//	SearchCumulativeScore();
 			// Todo: implement this - SREACH
+          // sreach_sreach_cumulativeScore(mainBuffer, sreach_buffer, number);
 			break;
 		case 5:
 			// SearchDepartment();
-			sreach_sreach_department(mainBuffer, sreach_buffer, subString);
+			//sreach_sreach_department(mainBuffer, sreach_buffer, subString);
 			break;
 		case 6:
 			// SearchBirthYear();
 			// Todo: implement this - SREACH
+            //sreach_sreach_birthYear(mainBuffer, sreach_buffer, number);
 			break;
 		default:
 			printf("\nEnter choice again!");
