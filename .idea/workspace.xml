@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Students_management_software" targetName="Students_management_software" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="425623d9-d479-4468-a8f7-53a63415cbcc" name="Changes" comment="All things ís done Now, except file manipulations - Tran Hoang Anh" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Testing-Last-Branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="2DISoZeLEpCEAAO9LuUN03sa3Dp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Project/Fsoft Embedded training course/Students-management-software/CMakeLists.txt&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Project\Fsoft Embedded training course\Students-management-software\studentsManagementSoftware" />
+      <recent name="E:\Project\Fsoft Embedded training course\Students-management-software\u_lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Students_management_software" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Students_management_software" TARGET_NAME="Students_management_software" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Students_management_software" RUN_TARGET_NAME="Students_management_software">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="425623d9-d479-4468-a8f7-53a63415cbcc" name="Changes" comment="" />
+      <created>1660385281066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660385281066</updated>
+      <workItem from="1660385282956" duration="30000" />
+      <workItem from="1660385681898" duration="883000" />
+      <workItem from="1660387359669" duration="19000" />
+      <workItem from="1660388515062" duration="4517000" />
+      <workItem from="1660411987649" duration="1854000" />
+      <workItem from="1660413890978" duration="31000" />
+      <workItem from="1660444064301" duration="18360000" />
+      <workItem from="1660480261523" duration="98000" />
+      <workItem from="1660482304837" duration="4483000" />
+      <workItem from="1660486935765" duration="7721000" />
+      <workItem from="1660497525404" duration="868000" />
+      <workItem from="1660533670339" duration="8911000" />
+      <workItem from="1660550388861" duration="76000" />
+      <workItem from="1660550473468" duration="18000" />
+      <workItem from="1660550712757" duration="47000" />
+      <workItem from="1660550865308" duration="705000" />
+      <workItem from="1660553875463" duration="1335000" />
+      <workItem from="1660576388047" duration="480000" />
+      <workItem from="1660579055685" duration="40000" />
+      <workItem from="1660579313629" duration="103000" />
+      <workItem from="1660583406523" duration="88000" />
+      <workItem from="1660624957709" duration="740000" />
+      <workItem from="1660626860568" duration="6076000" />
+      <workItem from="1660633767131" duration="10296000" />
+      <workItem from="1660648112069" duration="156000" />
+      <workItem from="1660678360206" duration="52000" />
+      <workItem from="1660684112892" duration="634000" />
+      <workItem from="1660724436495" duration="813000" />
+      <workItem from="1660725286942" duration="1217000" />
+      <workItem from="1660748989668" duration="1229000" />
+      <workItem from="1660750529947" duration="1000" />
+    </task>
+    <task id="LOCAL-00001" summary="Teting Branch">
+      <created>1660388763074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660388763074</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding Module .h .c">
+      <created>1660409176382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660409176382</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding DataBufer">
+      <created>1660411925785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660411925785</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding DataBufer">
+      <created>1660413903483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660413903483</updated>
+    </task>
+    <task id="LOCAL-00005" summary="testing Input Data structure">
+      <created>1660444526187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660444526187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="testing Input Data structure">
+      <created>1660445907150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660445907150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="testing Input Data structure">
+      <created>1660446827233</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660446827233</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding text">
+      <created>1660456687181</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660456687181</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding path of File">
+      <created>1660461152105</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660461152105</updated>
+    </task>
+    <task id="LOCAL-00010" summary="dataStructure is done">
+      <created>1660482343563</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660482343563</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix dataStructure, uint32_t data -&gt;&gt; char * data">
+      <created>1660483113049</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660483113049</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add input buffer">
+      <created>1660485219046</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660485219046</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add input uint32_t ID -&gt;&gt;  void * studentObjAddress;">
+      <created>1660485693856</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660485693856</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add input uint32_t ID -&gt;&gt;  void * studentObjAddress;">
+      <created>1660487541490</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660487541490</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add input uint32_t ID -&gt;&gt;  void * studentObjAddress;">
+      <created>1660493750323</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660493750323</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add node_T operations">
+      <created>1660544135044</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660544135044</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add node_T operations">
+      <created>1660550403407</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660550403407</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add sort operation - Chi Chi">
+      <created>1660642391568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1660642391568</updated>
+    </task>
+    <task id="LOCAL-00019" summary="met qua di thoi">
+      <created>1660684184643</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1660684184643</updated>
+    </task>
+    <task id="LOCAL-00020" summary="All things ís done Now, except file manipulations - Tran Hoang Anh">
+      <created>1660725143385</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1660725143385</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Teting Branch" />
+    <MESSAGE value="Adding Module .h .c" />
+    <MESSAGE value="Adding DataBufer" />
+    <MESSAGE value="testing Input Data structure" />
+    <MESSAGE value="adding text file" />
+    <MESSAGE value="adding path of File" />
+    <MESSAGE value="dataStructure is done" />
+    <MESSAGE value="Fix dataStructure, uint32_t data -&gt;&gt; char * data" />
+    <MESSAGE value="add input buffer" />
+    <MESSAGE value="add input uint32_t ID -&gt;&gt;  void * studentObjAddress;" />
+    <MESSAGE value="add node_T operations" />
+    <MESSAGE value="add sort operation - Chi Chi" />
+    <MESSAGE value="met qua di thoi" />
+    <MESSAGE value="All things ís done Now, except file manipulations - Tran Hoang Anh" />
+    <option name="LAST_COMMIT_MESSAGE" value="All things ís done Now, except file manipulations - Tran Hoang Anh" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="varWatch" />
+        <watch expression="myBuffer" />
+        <watch expression="myBuffer.beginElement-&gt;next-&gt;next-&gt;next-&gt;next-&gt;next-&gt;next-&gt;next" />
+        <watch expression="iterator" language="ObjectiveC" />
+        <watch expression="studentTestData" />
+        <watch expression="myBuffer" />
+        <watch expression="myBuffer.beginElement-&gt;data" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
