@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.23"
+						"string" : "3.20"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Students_management_software::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Students_management_software-Debug-92b763bb9f202cf12dcc.json",
+					"jsonFile" : "target-Students_management_software-Debug-8f454b3a6f06c0b6d68b.json",
 					"name" : "Students_management_software",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/hoang/source/repos/anhembedded/Students-management-software/out/build/x64-Debug",
-		"source" : "C:/Users/hoang/source/repos/anhembedded/Students-management-software"
+		"build" : "C:/Users/Duc Nguyen/source/repos/DuckKun/Students-management-software/out/build/x64-Debug",
+		"source" : "C:/Users/Duc Nguyen/source/repos/DuckKun/Students-management-software"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }
