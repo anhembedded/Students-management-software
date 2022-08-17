@@ -7,7 +7,10 @@
 #include "studentsManagementSoftware/u_sortModule/u_sortModule.h"
 #include "studentsManagementSoftware/u_sortModule/u_sortModule.h"
 #include "studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.h"
-
+#include "studentsManagementSoftware/u_inputModule/u_inputModule.h"
+#include "studentsManagementSoftware/u_deleteModule/u_deleteModule.h"
+#include "studentsManagementSoftware/u_modifyModule/u_modifyModule.h"
+#include "studentsManagementSoftware/u_searchModule/u_searchModule.h"
 
 char menu_waitForInput()
 {
@@ -17,8 +20,9 @@ char menu_waitForInput()
 	return menu_option;
 }
 
-void menu_mainMenu(list_T* buffer) {
-   
+void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
+{
+
 	int Choice;
 	do
 	{
@@ -41,36 +45,36 @@ void menu_mainMenu(list_T* buffer) {
 			printf("\n==========Stop Program=================");
 			break;
 		case 1:
-			printAllBuffer_student(buffer);
+			printAllBuffer_student(mainBuffer);
 			break;
 		case 2:
-			//todo: SaveData
+			// todo: SaveData
 			break;
 		case 3:
-			//todo: loadData
+			// todo: loadData
 			break;
 		case 4:
-			    // Menu Data Processing //
-			menu_dataProcessing(buffer);
+			// Menu Data Processing //
+			menu_dataProcessing(mainBuffer);
 			break;
 		case 5:
-			menu_Sort(buffer);  // Menu Sort Data // 
+			menu_Sort(mainBuffer); // Menu Sort Data //
 			break;
 		case 6:
-			menu_Search(buffer); // Menu Search Data // 
+			menu_Search(mainBuffer, sreachBuffer); // Menu Search Data //
 			break;
 		default:
 			printf("\nEnter choice again!");
 			break;
 		}
 	} while (Choice != 0);
-
 }
 
-void menu_Sort(list_T* buffer)
+void menu_Sort(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Menu sort major ");
 		printf("\n2. Menu sort entryscores");
 		printf("\n3. Menu sort fullname");
@@ -110,10 +114,14 @@ void menu_Sort(list_T* buffer)
 	} while (choice != 0);
 }
 
-void menu_Search(list_T* buffer)
+void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 {
+	// Todo: add Substring -- MENU
+	//  Todo: Sreach hometown  -- MENU
 	int choice;
-	do {
+	char *subString;
+	do
+	{
 		printf("\n1. Menu search major ");
 		printf("\n2. Menu search entryscores");
 		printf("\n3. Menu search fullname");
@@ -129,22 +137,28 @@ void menu_Search(list_T* buffer)
 			printf("Out Menu search data");
 			break;
 		case 1:
-			//SearchMajor(); // 
+			// SearchMajor(); //
+			sreach_sreach_majors(mainBuffer, sreach_buffer, subString);
 			break;
 		case 2:
-		//	SearchEntryScore();
+			//	SearchEntryScore();
+			// Todo: implement this - SREACH
 			break;
 		case 3:
-			//SearchFullName();
+			// SearchFullName();
+			sreach_sreach_fullName(mainBuffer, sreach_buffer, subString);
 			break;
 		case 4:
-		//	SearchCumulativeScore();
+			//	SearchCumulativeScore();
+			// Todo: implement this - SREACH
 			break;
 		case 5:
-			//SearchDepartment();
+			// SearchDepartment();
+			sreach_sreach_department(mainBuffer, sreach_buffer, subString);
 			break;
 		case 6:
-			//SearchBirthYear();
+			// SearchBirthYear();
+			// Todo: implement this - SREACH
 			break;
 		default:
 			printf("\nEnter choice again!");
@@ -153,31 +167,35 @@ void menu_Search(list_T* buffer)
 	} while (choice != 0);
 }
 
-void menu_dataProcessing(list_T* buffer)
+void menu_dataProcessing(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Add new student");
 		printf("\n2. Delete student");
 		printf("\n3. Modify student");
 		printf("\n0. Out Menu Data Processing");
 		printf("\nYour choice: ");
 		scanf("%d", &choice);
-	
+
 		switch (choice)
 		{
 		case 0:
 			printf("Out Menu Data Processing");
 			break;
 		case 1:
-			//SinhVien = NhapSinhVien(); 
-			
+			// SinhVien = NhapSinhVien();
+			input_NhapSinhVien(buffer);
+
 			break;
 		case 2:
-			// DeleteSinhVien();
+			// Todo: need option
+			delete_deleteStudent(buffer, 0);
 			break;
 		case 3:
-		//	ModifySinhVien();
+			// Todo: need option
+			modify_modifyStudent(buffer, 0);
 			break;
 		default:
 			printf("\nEnter choice again");
@@ -186,16 +204,12 @@ void menu_dataProcessing(list_T* buffer)
 	} while (choice != 0);
 }
 
-
-
-
-
-
-// Các hàm sort 
-void SortMajor(list_T* buffer)
+// Các hàm sort
+void SortMajor(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Sort increase");
 		printf("\n2. Sort decrease");
 		printf("\n0. Out sort major");
@@ -217,10 +231,11 @@ void SortMajor(list_T* buffer)
 	} while (choice != 0);
 }
 
-void SortEntryScore(list_T* buffer)
+void SortEntryScore(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Sort increase");
 		printf("\n2. Sort decrease");
 		printf("\n0. Out sort entryscore");
@@ -232,7 +247,6 @@ void SortEntryScore(list_T* buffer)
 			printf("Out sort entryscore");
 			break;
 		case 1:
-			//SortEntryScoreIncrease();
 			sort_incr_entryScores(buffer);
 			break;
 		default:
@@ -243,10 +257,11 @@ void SortEntryScore(list_T* buffer)
 	} while (choice != 0);
 }
 
-void SortFullName(list_T* buffer)
+void SortFullName(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Sort increase");
 		printf("\n2. Sort decrease");
 		printf("\n0. Out sort fullname");
@@ -258,7 +273,6 @@ void SortFullName(list_T* buffer)
 			printf("Out sort fullname");
 			break;
 		case 1:
-			//SortFullNameIncrease();
 			sort_incr_fullName(buffer);
 			break;
 		default:
@@ -269,10 +283,11 @@ void SortFullName(list_T* buffer)
 	} while (choice != 0);
 }
 
-void SortCumulativeScore(list_T* buffer)
+void SortCumulativeScore(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Sort increase");
 		printf("\n2. Sort decrease");
 		printf("\n0. Out sort cumulativescore");
@@ -294,10 +309,11 @@ void SortCumulativeScore(list_T* buffer)
 	} while (choice != 0);
 }
 
-void SortDepartment(list_T* buffer)
+void SortDepartment(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Sort increase");
 		printf("\n2. Sort decrease");
 		printf("\n0. Out sort department");
@@ -309,7 +325,7 @@ void SortDepartment(list_T* buffer)
 			printf("Out sort department");
 			break;
 		case 1:
-	
+
 			sort_incr_department(buffer);
 			break;
 		default:
@@ -320,10 +336,11 @@ void SortDepartment(list_T* buffer)
 	} while (choice != 0);
 }
 
-void SortBirthYear(list_T* buffer)
+void SortBirthYear(list_T *buffer)
 {
 	int choice;
-	do {
+	do
+	{
 		printf("\n1. Sort increase");
 		printf("\n2. Sort decrease");
 		printf("\n0. Out sort birthyear");
@@ -343,5 +360,3 @@ void SortBirthYear(list_T* buffer)
 		}
 	} while (choice != 0);
 }
-
-

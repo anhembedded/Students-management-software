@@ -13,6 +13,7 @@
 
 studentInputBuffer_T input_NhapSinhVien();
 student_T input_allocateData(studentInputBuffer_T *stdBuffer_ptr);
+student_T input_allocateDataStudent_T(student_T* std_ptr);
 
 
 

@@ -29,4 +29,4 @@ void printAllBuffer_cumulativeScore(list_T *buffer);
 void printAllBuffer_fullName(list_T *buffer);
 void printAllBuffer_student(list_T *buffer);
 
-#endif //STUDENTS_MANAGEMENT_SOFTWARE_U_DISPLAYMODULE_H
+#endif // STUDENTS_MANAGEMENT_SOFTWARE_U_DISPLAYMODULE_H
