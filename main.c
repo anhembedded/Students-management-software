@@ -75,6 +75,7 @@ char* name = "TranHoangAnh";
 
 int main()
 {
+    //cmt
    init();
 
   
