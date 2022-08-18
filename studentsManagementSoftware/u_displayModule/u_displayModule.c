@@ -14,8 +14,8 @@ void printAllBuffer_student(list_T *buffer)
     iter = buffer->beginElement->next; // index 0;
 
     printf("%-3s |    %-20s |    %-10s |    %-20s |    %-20s |    %-20s |    %-15s |    %-15s |    \n\n",
-        "STT", "fullName", "birthYear", "homeTown", "department", "majors",
-        "entryScores", "cumulativeScore");
+        "STT", "Full Name", "BirthYear", "HomeTown", "Department", "major",
+        "EntryScore", "CumulativeScore");
 
     while (iter != NULL)
     {
@@ -31,8 +31,4 @@ void printAllBuffer_student(list_T *buffer)
         iter = iter->next;
         counter++;
     }
-    int c = getchar();
-    while (c != '\n' && c != EOF);
-    printf("Press any key to continue...");
-    (void)getchar();
 }

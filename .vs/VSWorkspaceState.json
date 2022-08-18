@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\studentsManagementSoftware",
+    "\\studentsManagementSoftware\\u_displayModule",
     "\\studentsManagementSoftware\\u_menuModule",
-    "\\studentsManagementSoftware\\u_saveModule",
-    "\\studentsManagementSoftware\\u_sortModule",
-    "\\u_lib"
+    "\\studentsManagementSoftware\\u_searchModule",
+    "\\studentsManagementSoftware\\u_sortModule"
   ],
   "SelectedNode": "\\studentsManagementSoftware\\u_menuModule\\u_menuModule.c",
   "PreviewInSolutionExplorer": false
