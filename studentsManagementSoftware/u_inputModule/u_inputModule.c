@@ -9,21 +9,31 @@
 studentInputBuffer_T input_NhapSinhVien()
 {
 	studentInputBuffer_T student;
-	printf("fullName sinh vien: ");
-	(void)scanf("%s", &student.fullName);
+	printf("\nfullName sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", &student.fullName);
+
 	printf("\nBirthyear sinh vien: ");
 	(void)scanf("%d", &student.birthYear);
+
+	printf("\nHometown sinh vien: ");
 	(void)getchar();
-	printf("Department sinh vien: ");
-	(void)scanf("%s", student.department);
-	printf("Hometown sinh vien: ");
-	(void)scanf("%s", student.homeTown);
-	printf("Major sinh vien: ");
-	(void)scanf("%s", student.majors);
-	printf("CumulativeScore sinh vien: ");
+	(void)scanf("%[^\n]s", &student.homeTown);
+
+	printf("\nDepartment sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", &student.department);
+
+	printf("\nMajor sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", &student.majors);
+
+	printf("\nCumulativeScore sinh vien: ");
 	(void)scanf("%d", &student.cumulativeScore);
-	printf("EntryScores sinh vien: ");
+
+	printf("\nEntryScores sinh vien: ");
 	(void)scanf("%d", &student.entryScores);
+
 	return student;
 }
 
@@ -91,3 +101,5 @@ student_T input_allocateDataStudent_T(student_T *std_ptr)
 
 	return temp;
 }
+
+

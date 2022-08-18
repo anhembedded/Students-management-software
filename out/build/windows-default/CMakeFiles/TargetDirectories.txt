@@ -1,3 +1,0 @@
-D:/mini_project/Students-management-software/out/build/windows-default/CMakeFiles/Students_management_software.dir
-D:/mini_project/Students-management-software/out/build/windows-default/CMakeFiles/edit_cache.dir
-D:/mini_project/Students-management-software/out/build/windows-default/CMakeFiles/rebuild_cache.dir

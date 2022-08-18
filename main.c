@@ -9,21 +9,21 @@
 
 #include "main.h"
 
-
 student_T studentTestData[10];
 list_T mainBuffer;
 list_T sreachBuffer;
 uint32_t watchData;
 LIST_ITERATOR_TYPE_T iter;
+
 // JUST a Test Function
 void init()
 {
 
-   studentTestData[0].fullName = "Bich Tuyen";
-   studentTestData[1].fullName = "Viet Nga";
-   studentTestData[2].fullName = "Thu Trinh";
-   studentTestData[3].fullName = "Kim Thoai";
-   studentTestData[4].fullName = "Thanh Sang";
+   studentTestData[0].fullName = "Tran Bich Tuyen";
+   studentTestData[1].fullName = "Nguyen Viet Nga";
+   studentTestData[2].fullName = "Le Thu Trinh";
+   studentTestData[3].fullName = "Kim Kim Thoai";
+   studentTestData[4].fullName = "Vo Thanh Sang";
 
    studentTestData[0].cumulativeScore = 32;
    studentTestData[1].cumulativeScore = 133;
@@ -37,17 +37,17 @@ void init()
    studentTestData[3].homeTown = "Ha Noi";
    studentTestData[4].homeTown = "Bac Can";
 
-   studentTestData[0].department = "[BT].department";
-   studentTestData[1].department = "[VN].department";
-   studentTestData[2].department = "[TT].department";
-   studentTestData[3].department = "[KT].department";
-   studentTestData[4].department = "[TS].department";
+   studentTestData[0].department = "Co Khi";
+   studentTestData[1].department = "Dien Tu";
+   studentTestData[2].department = "Kinh Te";
+   studentTestData[3].department = "Xay dung";
+   studentTestData[4].department = "May";
 
-   studentTestData[0].majors = "[BT].majors";
-   studentTestData[1].majors = "[VN].majors";
-   studentTestData[2].majors = "[TT].majors";
-   studentTestData[3].majors = "[KT].majors";
-   studentTestData[4].majors = "[TS].majors";
+   studentTestData[0].majors = "Toan Tin";
+   studentTestData[1].majors = "Dieu Khien";
+   studentTestData[2].majors = "Cong Nghiep";
+   studentTestData[3].majors = "Nha May";
+   studentTestData[4].majors = "Hien Dai";
 
    studentTestData[0].entryScores = 23;
    studentTestData[1].entryScores = 22;

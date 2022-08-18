@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\studentsManagementSoftware",
+    "\\studentsManagementSoftware\\u_menuModule",
+    "\\studentsManagementSoftware\\u_saveModule",
+    "\\studentsManagementSoftware\\u_sortModule",
+    "\\u_lib"
   ],
+  "SelectedNode": "\\studentsManagementSoftware\\u_menuModule\\u_menuModule.c",
   "PreviewInSolutionExplorer": false
 }

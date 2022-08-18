@@ -15,7 +15,7 @@
 char menu_waitForInput()
 {
 	char menu_option;
-	scanf("%c", &menu_option);
+	(void)scanf("%c", &menu_option);
 
 	return menu_option;
 }
@@ -25,9 +25,10 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 
 	int Choice;
 	do
-	{
-		printf("\n=============== Manage Student Program ===============");
-		printf("\n=============== Main MENU ===============");
+	{	
+		system("cls");
+		printf("\n======================== Manage Student Program ============================");
+		printf("\n======================== Main MENU =========================================");
 		printf("\n1. Show all data on Terminal");
 		printf("\n2. Save data to file");
 		printf("\n3. Load data from file");
@@ -37,7 +38,7 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 		printf("\n0. Quit program!");
 		printf("\nYour choice: ");
 
-		scanf("%d", &Choice);
+		(void)scanf("%d", &Choice);
 
 		switch (Choice)
 		{
@@ -64,7 +65,10 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 			menu_Search(mainBuffer, sreachBuffer); // Menu Search Data //
 			break;
 		default:
-			printf("\nEnter choice again!");
+			printf("Enter choice again!");
+			(void)getchar();
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
 	} while (Choice != 0);
@@ -75,6 +79,7 @@ void menu_Sort(list_T *buffer)
 	int choice;
 	do
 	{
+		system("cls");
 		printf("\n1. Menu sort major ");
 		printf("\n2. Menu sort entryscores");
 		printf("\n3. Menu sort fullname");
@@ -83,7 +88,7 @@ void menu_Sort(list_T *buffer)
 		printf("\n6. Menu sort birthyear");
 		printf("\n0. Out Menu sort data");
 		printf("\nYour choice: ");
-		scanf("%d", &choice);
+		(void)scanf("%d", &choice);
 		switch (choice)
 		{
 		case 0:
@@ -108,7 +113,10 @@ void menu_Sort(list_T *buffer)
 			SortBirthYear(buffer);
 			break;
 		default:
-			printf("\nEnter choice again!");
+			printf("\nEnter choice again");
+			(void)getchar();
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
 	} while (choice != 0);
@@ -119,9 +127,11 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 	// Todo: add Substring -- MENU
 	//  Todo: Sreach hometown  -- MENU
 	int choice;
-	char *subString = NULL;
+	char subString[50];
+	int number;
 	do
 	{
+		system("cls");
 		printf("\n1. Menu search major ");
 		printf("\n2. Menu search entryscores");
 		printf("\n3. Menu search fullname");
@@ -137,34 +147,52 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 			printf("Out Menu search data");
 			break;
 		case 1:
-			// Todo: get Substring -- MENU
+			printf("Nhap major: ");
+			(void)getchar();
+			(void)scanf("%[^\n]s",subString);
 			sreach_sreach_majors(mainBuffer, sreach_buffer, subString);
+			printAllBuffer_student(sreach_buffer);
 			break;
 		case 2:
-			// Todo: get Substring -- MENU
-			// Todo: implement this - SREACH
-           // sreach_sreach_entryScores(mainBuffer, sreach_buffer, number);
+			printf("Nhap entryScores: ");
+			(void)(scanf("%d",&number));
+			(void)getchar();
+            sreach_sreach_entryScores(mainBuffer, sreach_buffer, number);
+			printAllBuffer_student(sreach_buffer);
 			break;
 		case 3:
-			// SearchFullName();
+			printf("Nhap major: ");
+			(void)getchar();
+			(void)scanf("%[^\n]s", subString);
 			sreach_sreach_fullName(mainBuffer, sreach_buffer, subString);
+			printAllBuffer_student(sreach_buffer);
 			break;
 		case 4:
-			//	SearchCumulativeScore();
-			// Todo: implement this - SREACH
-          // sreach_sreach_cumulativeScore(mainBuffer, sreach_buffer, number);
+			printf("Nhap entryScores: ");
+			(void)(scanf("%d", &number));
+			(void)getchar();
+            sreach_sreach_cumulativeScore(mainBuffer, sreach_buffer, number);
+			printAllBuffer_student(sreach_buffer);
 			break;
 		case 5:
-			// SearchDepartment();
-			//sreach_sreach_department(mainBuffer, sreach_buffer, subString);
+			printf("Nhap major: ");
+			(void)getchar();
+			(void)scanf("%[^\n]s", subString);
+			sreach_sreach_department(mainBuffer, sreach_buffer, subString);
+			printAllBuffer_student(sreach_buffer);
 			break;
 		case 6:
-			// SearchBirthYear();
-			// Todo: implement this - SREACH
-            //sreach_sreach_birthYear(mainBuffer, sreach_buffer, number);
+			printf("Nhap entryScores: ");
+			(void)(scanf("%d", &number));
+			(void)getchar();
+            sreach_sreach_birthYear(mainBuffer, sreach_buffer, number);
+			printAllBuffer_student(sreach_buffer);
 			break;
 		default:
 			printf("\nEnter choice again!");
+			(void)getchar();
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
 	} while (choice != 0);
@@ -173,15 +201,17 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 void menu_dataProcessing(list_T * mainBuffer)
 {
 	int choice;
-	
+	int index;
+	int numberOfElement;
 	do
 	{
+		system("cls");
 		printf("\n1. Add new student");
 		printf("\n2. Delete student");
 		printf("\n3. Modify student");
 		printf("\n0. Out Menu Data Processing");
 		printf("\nYour choice: ");
-		scanf("%d", &choice);
+		(void)scanf("%d", &choice);
 
 		switch (choice)
 		{
@@ -189,28 +219,57 @@ void menu_dataProcessing(list_T * mainBuffer)
 			printf("Out Menu Data Processing");
 			break;
 		case 1:
-			// SinhVien = NhapSinhVien
 			add_addStudent(mainBuffer);
 			break;
 		case 2:
-			// Todo: need option
-			delete_deleteStudent(mainBuffer, 0);
+			//Todo: Hien thi nhap lai 
+			//Todo: Tach ham any key ...
+			printAllBuffer_student(mainBuffer);
+			numberOfElement = list_size(mainBuffer);
+			do
+			{
+				printf("Nhap Index Sinh Vien Muon Xoa: ");
+				(void)scanf("%d", &index);
+				(void)getchar();
+			} while (index > numberOfElement);
+
+			delete_deleteStudent(mainBuffer, index);
+			printf("Delete Successfully!");
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		case 3:
-			// Todo: need option
-			modify_modifyStudent(mainBuffer, 0);
+			//Todo: Hien thi nhap lai 
+			//Todo: Tach ham any key ...
+			printAllBuffer_student(mainBuffer);
+			numberOfElement = list_size(mainBuffer);
+			do
+			{
+				printf("Nhap Index Sinh Vien Muon Dieu Chinh: ");
+				(void)scanf("%d", &index);
+				(void)getchar();
+			} while (index > numberOfElement);
+			modify_modifyStudent(mainBuffer, index);
+			printf("Modify Successfully!");
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		default:
-			printf("\nEnter choice again");
+			printf("Enter choice again");
+			int c = getchar();
+			while (c != '\n' && c != EOF);
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
-	} while (choice != 0);
+	} while (choice != 0);	
 }
 
 // Các hàm sort
 void menu_sortMajor(list_T *buffer)
 {
 	int choice;
+	int c = getchar();
 	do
 	{
 		printf("\n1. Sort increase");
@@ -226,8 +285,14 @@ void menu_sortMajor(list_T *buffer)
 		case 1:
 			sort_incr_majors(buffer);
 			break;
-		default:
+		case 2:
 			sort_decr_majors(buffer);
+			break;
+		default:
+			printf("Enter choice again");
+			while (c != '\n' && c != EOF);
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
 
@@ -237,6 +302,7 @@ void menu_sortMajor(list_T *buffer)
 void SortEntryScore(list_T *buffer)
 {
 	int choice;
+	int c = getchar();
 	do
 	{
 		printf("\n1. Sort increase");
@@ -252,8 +318,14 @@ void SortEntryScore(list_T *buffer)
 		case 1:
 			sort_incr_entryScores(buffer);
 			break;
-		default:
+		case 2:
 			sort_decr_entryScores(buffer);
+			break;
+		default:
+			printf("Enter choice again");
+			while (c != '\n' && c != EOF);
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
 
@@ -263,6 +335,7 @@ void SortEntryScore(list_T *buffer)
 void SortFullName(list_T *buffer)
 {
 	int choice;
+	int c = getchar();
 	do
 	{
 		printf("\n1. Sort increase");
@@ -278,8 +351,14 @@ void SortFullName(list_T *buffer)
 		case 1:
 			sort_incr_fullName(buffer);
 			break;
-		default:
+		case 2:
 			sort_decr_fullName(buffer);
+			break;
+		default:
+			printf("Enter choice again");
+			while (c != '\n' && c != EOF);
+			printf("\nPress any key to continue...");
+			(void)getchar();
 			break;
 		}
 
