@@ -1,14 +1,11 @@
 
-
 /*
  * Created on Wed Aug 17 2022
  *
  *
  */
 
-
 #include "main.h"
-
 
 student_T studentTestData[10];
 list_T mainBuffer;
@@ -17,13 +14,9 @@ uint32_t watchData;
 list_iteratorType_T iter;
 // JUST a Test Function
 
-int codeLearn(int a, int b)
-{
-    return a;
-}
+
 void init()
 {
-
    studentTestData[0].fullName = "Bich Tuyen";
    studentTestData[1].fullName = "Viet Nga";
    studentTestData[2].fullName = "Thu Trinh";
@@ -68,14 +61,13 @@ void init()
 
    list_initList(&mainBuffer, 0);
    list_initList(&sreachBuffer, 0);
-   iter = list_back(&mainBuffer);
+  
    watchData = list_size(&mainBuffer);
 
    for (int i = 0; i <= 4; i++)
    {
       add_addStudentData(&mainBuffer, &studentTestData[i]);
       watchData = list_size(&mainBuffer);
-      iter = list_back(&mainBuffer);
    }
 }
 

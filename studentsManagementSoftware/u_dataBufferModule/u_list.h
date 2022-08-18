@@ -1,6 +1,14 @@
-//
-// Created by pcx on 8/15/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_list.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### LIST MODULE #####
+  ==============================================================================
+  */
+
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_LIST_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_LIST_H
@@ -13,7 +21,7 @@ typedef list_elementType_T* list_iteratorType_T;
 
 typedef struct u_list
 {
-    list_elementType_T *beginElement;
+   list_elementType_T *beginElement;
 } list_T;
 
 void list_init(list_T *listPtr);
@@ -33,8 +41,8 @@ list_dataType_T list_popBack(list_T *list_Ptr);
 list_dataType_T list_access(list_T *list_Ptr, int32_t positionOfElement);
 list_elementType_T *list_goToPos(list_T *list_Ptr, int32_t positionOfElement);
 
-list_elementType_T *list_front(list_T *list_Ptr);
-list_elementType_T *list_back(list_T *list_Ptr);
+static list_elementType_T *list_front(list_T *list_Ptr);
+static list_elementType_T *list_back(list_T *list_Ptr);
 static void list_insertFront(list_T *list_Ptr);
 static void list_insertBack(list_T *list_Ptr);
 static void list_insertFrontData(list_T *list_Ptr, list_dataType_T newData);

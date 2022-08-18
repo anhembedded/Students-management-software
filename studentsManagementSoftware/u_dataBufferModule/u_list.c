@@ -1,12 +1,24 @@
-//
-// Created by pcx on 8/15/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_list.c
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### LIST MODULE #####
+  ==============================================================================
+  */
+
 
 #include "u_list.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_init(list_T *listPtr)
 {
     listPtr->beginElement = malloc(sizeof(listPtr->beginElement));
@@ -19,7 +31,11 @@ void list_init(list_T *listPtr)
         listPtr->beginElement->next = NULL;
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_initList(list_T *listPtr, int32_t numberOfElements)
 {
 
@@ -41,7 +57,11 @@ void list_initList(list_T *listPtr, int32_t numberOfElements)
         iter = node_addNodeAsTail(iter);
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 _Bool list_empty(list_T *list_Ptr)
 {
     if (list_Ptr->beginElement == NULL)
@@ -53,7 +73,11 @@ _Bool list_empty(list_T *list_Ptr)
         return 0;
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 uint32_t list_size(list_T *list_Ptr)
 {
     uint32_t sizeRes = 0;
@@ -82,7 +106,11 @@ uint32_t list_size(list_T *list_Ptr)
 
     return sizeRes - 1;
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_clearAllNode(list_T *list_Ptr)
 {
     uint32_t sizeOfList = list_size(list_Ptr);
@@ -98,8 +126,12 @@ void list_clearAllNode(list_T *list_Ptr)
         }
     }
 }
-
- list_elementType_T *list_front(list_T *list_Ptr)
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
+static list_elementType_T *list_front(list_T *list_Ptr)
 {
     if (list_Ptr == NULL)
     {
@@ -110,8 +142,12 @@ void list_clearAllNode(list_T *list_Ptr)
         return list_Ptr->beginElement;
     }
 }
-
-list_elementType_T *list_back(list_T *list_Ptr)
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
+static list_elementType_T *list_back(list_T *list_Ptr)
 {
     list_iteratorType_T iter = list_Ptr->beginElement;
     if (list_empty(list_Ptr) == 1)
@@ -134,7 +170,11 @@ list_elementType_T *list_back(list_T *list_Ptr)
     }
     return iter;
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 static void list_insertFront(list_T *list_Ptr)
 {
     list_iteratorType_T iter_temp = NULL;
@@ -148,7 +188,11 @@ static void list_insertFront(list_T *list_Ptr)
         node_insertBetween(list_Ptr->beginElement, iter_temp);
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 static void list_insertBack(list_T *list_Ptr)
 {
     list_iteratorType_T iter_temp = NULL;
@@ -162,7 +206,11 @@ static void list_insertBack(list_T *list_Ptr)
         node_addNodeAsTail(iter_temp);
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 static void list_insertFrontData(list_T *list_Ptr, list_dataType_T newData)
 {
 
@@ -176,7 +224,11 @@ static void list_insertFrontData(list_T *list_Ptr, list_dataType_T newData)
         list_goToPos(list_Ptr, 0)->data = newData;
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 static void list_insertBackData(list_T *list_Ptr, list_dataType_T newData)
 {
     list_insertBack(list_Ptr);
@@ -189,7 +241,11 @@ static void list_insertBackData(list_T *list_Ptr, list_dataType_T newData)
         list_back(list_Ptr)->data = newData;
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_insert(list_T *list_Ptr, int32_t positionOfElement)
 {
     uint32_t sizeOfList;
@@ -232,7 +288,11 @@ void list_insertData(list_T *list_Ptr, list_dataType_T data, int32_t positionOfE
         list_goToPos(list_Ptr, positionOfElement)->data = data;
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_detele(list_T *list_Ptr, int32_t positionOfElement)
 {
 
@@ -262,6 +322,11 @@ void list_detele(list_T *list_Ptr, int32_t positionOfElement)
         node_deleteNode(iterDetele);
     }
 }
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 list_dataType_T list_popBack(list_T *list_Ptr)
 {
     list_dataType_T temp;
@@ -270,7 +335,11 @@ list_dataType_T list_popBack(list_T *list_Ptr)
     list_detele(list_Ptr, sizeOfList - 1);
     return temp;
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 list_dataType_T list_access(list_T *list_Ptr, int32_t positionOfElement)
 {
     if (list_goToPos(list_Ptr, positionOfElement) == NULL)
@@ -282,7 +351,11 @@ list_dataType_T list_access(list_T *list_Ptr, int32_t positionOfElement)
         return list_goToPos(list_Ptr, positionOfElement)->data;
     }
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 list_elementType_T *list_goToPos(list_T *list_Ptr, int32_t positionOfElement)
 {
     list_iteratorType_T iter = list_Ptr->beginElement;
@@ -299,7 +372,11 @@ list_elementType_T *list_goToPos(list_T *list_Ptr, int32_t positionOfElement)
     }
     return iter;
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 static list_iteratorType_T list_goToLastElement(list_T *list_Ptr)
 {
     uint32_t listSize = 0;
@@ -316,12 +393,20 @@ static list_iteratorType_T list_goToLastElement(list_T *list_Ptr)
     }
     return iter;
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_pushFront(list_T *list_Ptr, list_dataType_T data)
 {
     list_Ptr->beginElement = node_addNodeAsHeadData(list_Ptr->beginElement, data);
 }
-
+/**
+  * @brief
+  * @param
+  * @retval ThisReturn:
+  */
 void list_pushBack(list_T *list_Ptr, list_dataType_T data)
 {
     if (list_Ptr->beginElement == NULL)
@@ -332,7 +417,11 @@ void list_pushBack(list_T *list_Ptr, list_dataType_T data)
     iter_temp = list_back(list_Ptr);
     node_addNodeAsTailData(iter_temp, data);
 }
-
+/**
+* @brief
+* @param
+* @retval ThisReturn:
+*/
 list_dataType_T list_popFront(list_T *list_Ptr)
 {
 
@@ -340,7 +429,11 @@ list_dataType_T list_popFront(list_T *list_Ptr)
     list_detele(list_Ptr, 0);
     return temp;
 }
-
+/**
+* @brief
+* @param
+* @retval ThisReturn:
+*/
 void list_swap(list_T *list_Ptr, int32_t posA, int32_t posB)
 {
     list_dataType_T temp;

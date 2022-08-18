@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/14/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_node.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### NODE MODULE #####
+  ==============================================================================
+  */
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_NODE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_NODE_H
@@ -8,7 +15,6 @@
 
 
 typedef student_T node_dataType_T;
-
 extern const  node_dataType_T node_dataTypeInitData;
 
 typedef struct studentNode
@@ -16,6 +22,8 @@ typedef struct studentNode
     node_dataType_T data;
     struct studentNode *next;
 } node_T;
+
+
 
 node_T *node_createNode();
 node_T *node_createNodeData(node_dataType_T newData);

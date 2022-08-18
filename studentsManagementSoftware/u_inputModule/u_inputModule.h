@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_inputModule.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+						##### INPUT MODULE #####
+  ==============================================================================
+  */
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_INPUTMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_INPUTMODULE_H

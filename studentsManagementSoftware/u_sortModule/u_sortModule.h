@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_sortModule.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### LOAD MODULE #####
+  ==============================================================================
+  */
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H

@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_fileManipulateModule.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### FILE MANIPULATE MODULE #####
+  ==============================================================================
+  */
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_FILEMANIPULATEMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_FILEMANIPULATEMODULE_H

@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_inputModule.c
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+						##### INPUT MODULE #####
+  ==============================================================================
+  */
 
 #include "u_inputModule.h"
 #include <string.h>
@@ -31,25 +38,26 @@ student_T input_allocateData(studentInputBuffer_T *stdBuffer_ptr)
 {
 	student_T temp = studentTypeInitData;
 	uint32_t sizeOfString = 0;
+
 	sizeOfString = strlen(stdBuffer_ptr->fullName);
 	temp.fullName = malloc(sizeOfString + 1);
-	// todo: cheack Null
-	(void)strcpy(temp.fullName, stdBuffer_ptr->fullName);
+
+	strcpy(temp.fullName, stdBuffer_ptr->fullName);
 
 	sizeOfString = strlen(stdBuffer_ptr->department);
 	temp.department = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	(void)strcpy(temp.department, stdBuffer_ptr->department);
+	strcpy(temp.department, stdBuffer_ptr->department);
 
 	sizeOfString = strlen(stdBuffer_ptr->homeTown);
 	temp.homeTown = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	(void)strcpy(temp.homeTown, stdBuffer_ptr->homeTown);
+	strcpy(temp.homeTown, stdBuffer_ptr->homeTown);
 
 	sizeOfString = strlen(stdBuffer_ptr->majors);
 	temp.majors = malloc(sizeOfString + 1);
 	// todo: cheack Null
-	(void)strcpy(temp.majors, stdBuffer_ptr->majors);
+	strcpy(temp.majors, stdBuffer_ptr->majors);
 
 	temp.birthYear = stdBuffer_ptr->birthYear;
 	temp.cumulativeScore = stdBuffer_ptr->cumulativeScore;

@@ -19,157 +19,36 @@
   <component name="ChangeListManager">
     <list default="true" id="425623d9-d479-4468-a8f7-53a63415cbcc" name="Changes" comment="All things ís done Now, except file manipulations - Tran Hoang Anh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Students-management-software/FileContentIndex/0e2b9299-7e21-4890-a217-92d3c7b7f8e2.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Students-management-software/FileContentIndex/917edbc1-c640-45f4-8d50-d9afd63157be.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Students-management-software/FileContentIndex/923ef132-914d-4e0a-ad70-602b436315b0.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Students-management-software/FileContentIndex/c5a212cb-e079-481c-8081-76f725aec85e.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Students-management-software/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Students-management-software/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Students-management-software/v17/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Students-management-software/v17/Browse.VC.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/cmake.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cmake.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-9468c99202375d7e57b4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-dbe5028bf19961ef0eab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-74d05c146c7ef604ac66.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-def503f058b7037e77a6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-08-17T15-22-28-0522.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-08-17T15-33-46-0793.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Students_management_software-Debug-507cccf32bf1d2159ab1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Students_management_software-Debug-e10ee135983501386443.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-d4d77ddc246cfacfebca.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/dataStorage/filePath.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/dataStorage/filePath.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/main_studentMangementSoftware.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_addModule/u_addModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_addModule/u_addModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_list.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_list.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_node.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_node.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_deleteModule/u_deleteModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_deleteModule/u_deleteModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_displayModule/u_displayModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_displayModule/u_displayModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_inputModule/u_inputModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_inputModule/u_inputModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_loadModule/u_loadModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_loadModule/u_loadModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_menuModule/u_menuModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_menuModule/u_menuModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_modifyModule/u_modifyModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_modifyModule/u_modifyModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_saveModule/u_saveModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_saveModule/u_saveModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_searchModule/u_searchModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_searchModule/u_searchModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_sortModule/u_sortModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_sortModule/u_sortModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Students_management_software.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Students_management_software.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/query/client-MicrosoftVS/query.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/reply/cache-v2-3fab830af171c79a4185.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/reply/cmakeFiles-v1-2d177419f030e728942e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/reply/codemodel-v2-b9f1554beeafa4990696.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/reply/index-2022-08-14T10-13-24-0404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/reply/target-Students_management_software-Debug-c04360b96e4cdcdcfa88.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.cmake/api/v1/reply/toolchains-v1-b02151a4c73b877775ca.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/3.20.21032501-MSVC_2/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/ShowIncludes/foo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/ShowIncludes/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/embed.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/intermediate.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/main.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/manifest.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/manifest.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_addModule/u_addModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_deleteModule/u_deleteModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_displayModule/u_displayModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_inputModule/u_inputModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_loadModule/u_loadModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_menuModule/u_menuModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_modifyModule/u_modifyModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_saveModule/u_saveModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_searchModule/u_searchModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_sortModule/u_sortModule.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/Students_management_software.dir/vc140.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/Students_management_software.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/Students_management_software.ilk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/Students_management_software.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/VSInheritEnvironments.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/windows-default/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-b7a2df684ff4f317f7a8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-98e297889f56303cdeca.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-cf1c34a09d58506ff3c5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/index-2022-08-17T12-58-14-0266.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/target-Students_management_software-Debug-92b763bb9f202cf12dcc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/toolchains-v1-e4cc4cb9c19c9030f03c.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.23.22060601-MSVC_2/CompilerIdC/CMakeCCompilerId.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/main.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/manifest.rc" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/manifest.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/dataStorage/filePath.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/dataStorage/filePath.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_addModule/u_addModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_addModule/u_addModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_list.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_list.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_node.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_dataBufferModule/u_node.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_deleteModule/u_deleteModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_deleteModule/u_deleteModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_displayModule/u_displayModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_displayModule/u_displayModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_inputModule/u_inputModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_inputModule/u_inputModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_loadModule/u_loadModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_loadModule/u_loadModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_menuModule/u_menuModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_menuModule/u_menuModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_modifyModule/u_modifyModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_modifyModule/u_modifyModule.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_saveModule/u_saveModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_saveModule/u_saveModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_searchModule/u_searchModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_searchModule/u_searchModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_sortModule/u_sortModule.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/studentsManagementSoftware/u_sortModule/u_sortModule.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/Students_management_software.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/Students_management_software.exe" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/Students_management_software.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/Students_management_software.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/Students_management_software.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/Students_management_software.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/Students_management_software.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_addModule/u_addModule.c" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_addModule/u_addModule.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_addModule/u_addModule.h" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_addModule/u_addModule.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_dataBufferModule/u_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_dataBufferModule/u_list.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_dataBufferModule/u_list.h" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_dataBufferModule/u_list.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_dataStruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_dataStruct.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_deleteModule/u_deleteModule.c" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_deleteModule/u_deleteModule.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_displayModule/u_displayModule.c" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_displayModule/u_displayModule.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_inputModule/u_inputModule.c" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_inputModule/u_inputModule.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentsManagementSoftware/u_menuModule/u_menuModule.c" beforeDir="false" afterPath="$PROJECT_DIR$/studentsManagementSoftware/u_menuModule/u_menuModule.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u_lib/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/u_lib/common.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,11 +117,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -285,6 +159,7 @@
       <workItem from="1660750529947" duration="797000" />
       <workItem from="1660760571953" duration="140000" />
       <workItem from="1660795609069" duration="365000" />
+      <workItem from="1660806767451" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="Teting Branch">
       <created>1660388763074</created>

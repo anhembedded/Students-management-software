@@ -1,7 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
-
+/**
+  ******************************************************************************
+  * @file    u_searchModule.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### SEARCH MODULE #####
+  ==============================================================================
+  */
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_SEARCHMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_SEARCHMODULE_H
 #include "studentsManagementSoftware/u_dataBufferModule/u_dataBufferModule.h"
