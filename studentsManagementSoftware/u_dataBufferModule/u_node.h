@@ -6,9 +6,10 @@
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_NODE_H
 #include "studentsManagementSoftware/u_dataStruct.h"
 
-// typedef node_dataType_T node_dataType_T ;
 
 typedef student_T node_dataType_T;
+
+extern const  node_dataType_T node_dataTypeInitData;
 
 typedef struct studentNode
 {

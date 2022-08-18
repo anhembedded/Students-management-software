@@ -7,7 +7,7 @@
 
 static void delete_freeDataOfStringPtr(list_T *buffer, int32_t postOnBuffer)
 {
-	LIST_ELEMENT_TYPE_T *temp;
+	list_elementType_T *temp;
 	temp = list_goToPos(buffer, postOnBuffer);
 	free(temp->data.fullName);
 	free(temp->data.homeTown);

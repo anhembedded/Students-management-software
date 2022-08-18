@@ -8,7 +8,7 @@
 
 studentInputBuffer_T input_NhapSinhVien()
 {
-	studentInputBuffer_T student;
+	studentInputBuffer_T student = studentInputBufferObjInit;
 	printf("fullName sinh vien: ");
 	(void)scanf("%s", &student.fullName);
 	printf("\nBirthyear sinh vien: ");
@@ -29,8 +29,7 @@ studentInputBuffer_T input_NhapSinhVien()
 
 student_T input_allocateData(studentInputBuffer_T *stdBuffer_ptr)
 {
-	student_T temp;
-
+	student_T temp = studentTypeInitData;
 	uint32_t sizeOfString = 0;
 	sizeOfString = strlen(stdBuffer_ptr->fullName);
 	temp.fullName = malloc(sizeOfString + 1);
@@ -62,7 +61,7 @@ student_T input_allocateData(studentInputBuffer_T *stdBuffer_ptr)
 student_T input_allocateDataStudent_T(student_T *std_ptr)
 {
 	// todo: use memCpy
-	student_T temp;
+	student_T temp = studentTypeInitData;
 
 	uint32_t sizeOfString = 0;
 	sizeOfString = strlen(std_ptr->fullName);

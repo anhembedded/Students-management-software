@@ -6,6 +6,17 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+const  node_dataType_T node_dataTypeInitData = {
+ .fullName = "fullName init",
+ .birthYear = 0000U,
+ .homeTown = "homeTown init",
+ .department = "department init",
+ .majors = "majors init",
+ .entryScores = 0000U,
+ .cumulativeScore = 0000U
+};
+
+
 node_T *node_createNodeData(node_dataType_T newData)
 {
     node_T *temp = (node_T *)malloc(sizeof(node_T)); // node_dataType_T

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\studentsManagementSoftware"
+    "\\studentsManagementSoftware",
+    "\\studentsManagementSoftware\\u_dataBufferModule",
+    "\\studentsManagementSoftware\\u_menuModule"
   ],
-  "SelectedNode": "\\studentsManagementSoftware\\main_studentMangementSoftware.h.c",
+  "SelectedNode": "\\studentsManagementSoftware",
   "PreviewInSolutionExplorer": false
 }

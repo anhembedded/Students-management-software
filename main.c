@@ -14,8 +14,13 @@ student_T studentTestData[10];
 list_T mainBuffer;
 list_T sreachBuffer;
 uint32_t watchData;
-LIST_ITERATOR_TYPE_T iter;
+list_iteratorType_T iter;
 // JUST a Test Function
+
+int codeLearn(int a, int b)
+{
+    return a;
+}
 void init()
 {
 

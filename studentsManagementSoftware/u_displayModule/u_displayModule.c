@@ -7,7 +7,7 @@
 
 void printAllBuffer_cumulativeScore(list_T *buffer)
 {
-    LIST_ITERATOR_TYPE_T iter;
+    list_iteratorType_T iter;
     iter = buffer->beginElement->next; // index 0;
     while (iter != NULL)
     {
@@ -19,7 +19,7 @@ void printAllBuffer_cumulativeScore(list_T *buffer)
 void printAllBuffer_fullName(list_T *buffer)
 {
 
-    LIST_ITERATOR_TYPE_T iter;
+    list_iteratorType_T iter;
     iter = buffer->beginElement->next; // index 0;
 
     while (iter != NULL)
@@ -31,7 +31,7 @@ void printAllBuffer_fullName(list_T *buffer)
 
 void printAllBuffer_student(list_T *buffer)
 {
-    LIST_ITERATOR_TYPE_T iter;
+    list_iteratorType_T iter;
     uint32_t counter = 0;
     iter = buffer->beginElement->next; // index 0;
 
