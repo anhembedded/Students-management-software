@@ -1,4 +1,4 @@
-//
+﻿//
 // Created by pcx on 8/13/2022.
 //
 
@@ -15,3 +15,4 @@ void writeStringToFileDat(char *theString)
 
 	fclose(file_prt);
 }
+//Todo: Viết một function -> Đọc file 

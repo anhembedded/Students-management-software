@@ -20,7 +20,7 @@ void sreach_sreachString(list_T *bufferData, list_T *bufferSreach, char *theStri
 	}
 }
 
-void sreach_sreach_fullName(list_T *bufferData, list_T *bufferSreach, char *theString)
+void search_search_fullName(list_T *bufferData, list_T *bufferSreach, char *theString)
 {
 	list_clearAllNode(bufferSreach);
 	uint32_t sizeOfBuffer = list_size(bufferData);
@@ -33,7 +33,7 @@ void sreach_sreach_fullName(list_T *bufferData, list_T *bufferSreach, char *theS
 	}
 }
 
-void sreach_sreach_department(list_T *bufferData, list_T *bufferSreach, char *theString)
+void search_search_department(list_T *bufferData, list_T *bufferSreach, char *theString)
 {
 	list_clearAllNode(bufferSreach);
 	uint32_t sizeOfBuffer = list_size(bufferData);
@@ -46,7 +46,7 @@ void sreach_sreach_department(list_T *bufferData, list_T *bufferSreach, char *th
 	}
 }
 
-void sreach_sreach_majors(list_T *bufferData, list_T *bufferSreach, char *theString)
+void search_search_majors(list_T *bufferData, list_T *bufferSreach, char *theString)
 {
 	list_clearAllNode(bufferSreach);
 	uint32_t sizeOfBuffer = list_size(bufferData);
@@ -59,7 +59,7 @@ void sreach_sreach_majors(list_T *bufferData, list_T *bufferSreach, char *theStr
 	}
 }
 
-void sreach_sreach_homeTown(list_T *bufferData, list_T *bufferSreach, char *theString)
+void search_search_homeTown(list_T *bufferData, list_T *bufferSreach, char *theString)
 {
 	list_clearAllNode(bufferSreach);
 	uint32_t sizeOfBuffer = list_size(bufferData);
@@ -72,7 +72,7 @@ void sreach_sreach_homeTown(list_T *bufferData, list_T *bufferSreach, char *theS
 	}
 }
 
-void sreach_sreach_birthYear(list_T *bufferData, list_T *bufferSreach, uint32_t numberSreach) {
+void search_search_birthYear(list_T *bufferData, list_T *bufferSreach, uint32_t numberSreach) {
     list_clearAllNode(bufferSreach);
     uint32_t sizeOfBuffer = list_size(bufferData);
     for(uint32_t  i=0; i<sizeOfBuffer; i++)
@@ -85,7 +85,7 @@ void sreach_sreach_birthYear(list_T *bufferData, list_T *bufferSreach, uint32_t 
     }
 }
 
-void sreach_sreach_cumulativeScore(list_T *bufferData, list_T *bufferSreach, uint32_t numberSreach) {
+void search_search_cumulativeScore(list_T *bufferData, list_T *bufferSreach, uint32_t numberSreach) {
     list_clearAllNode(bufferSreach);
     uint32_t sizeOfBuffer = list_size(bufferData);
     for(uint32_t  i=0; i<sizeOfBuffer; i++)
@@ -98,7 +98,7 @@ void sreach_sreach_cumulativeScore(list_T *bufferData, list_T *bufferSreach, uin
     }
 }
 
-void sreach_sreach_entryScores(list_T *bufferData, list_T *bufferSreach, uint32_t numberSreach) {
+void search_search_entryScores(list_T *bufferData, list_T *bufferSreach, uint32_t numberSreach) {
     list_clearAllNode(bufferSreach);
     uint32_t sizeOfBuffer = list_size(bufferData);
     for(uint32_t  i=0; i<sizeOfBuffer; i++)
