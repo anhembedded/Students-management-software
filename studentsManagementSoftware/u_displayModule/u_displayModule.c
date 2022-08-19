@@ -14,7 +14,7 @@ void printAllBuffer_student(list_T *buffer)
     iter = buffer->beginElement->next; // index 0;
 
     printf("%-3s |    %-20s |    %-10s |    %-20s |    %-20s |    %-20s |    %-15s |    %-15s |    \n\n",
-        "STT", "Full Name", "BirthYear", "HomeTown", "Department", "major",
+        "STT", "Full Name", "BirthYear", "HomeTown", "Department", "Major",
         "EntryScore", "CumulativeScore");
 
     while (iter != NULL)
@@ -25,8 +25,8 @@ void printAllBuffer_student(list_T *buffer)
         printf("%-20s |    ", iter->data.homeTown);
         printf("%-20s |    ", iter->data.department);
         printf("%-20s |    ", iter->data.majors);
-        printf("%-15d |    ", iter->data.entryScores);
-        printf("%-15d |    ", iter->data.cumulativeScore);
+        printf("%-15.2f |    ",(float)(iter->data.entryScores)/100);
+        printf("%-15.2f |    ",(float)(iter->data.cumulativeScore)/100);
         printf("\n");
         iter = iter->next;
         counter++;

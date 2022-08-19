@@ -18,18 +18,17 @@ LIST_ITERATOR_TYPE_T iter;
 // JUST a Test Function
 void init()
 {
-
    studentTestData[0].fullName = "Tran Bich Tuyen";
    studentTestData[1].fullName = "Nguyen Viet Nga";
    studentTestData[2].fullName = "Le Thu Trinh";
    studentTestData[3].fullName = "Kim Kim Thoai";
    studentTestData[4].fullName = "Vo Thanh Sang";
 
-   studentTestData[0].cumulativeScore = 32;
-   studentTestData[1].cumulativeScore = 133;
-   studentTestData[2].cumulativeScore = 24;
-   studentTestData[3].cumulativeScore = 234;
-   studentTestData[4].cumulativeScore = 4;
+   studentTestData[0].birthYear = 2003;
+   studentTestData[1].birthYear = 1997;
+   studentTestData[2].birthYear = 1996;
+   studentTestData[3].birthYear = 2005;
+   studentTestData[4].birthYear = 2009;
 
    studentTestData[0].homeTown = "Long An";
    studentTestData[1].homeTown = "Hai Phong";
@@ -49,17 +48,18 @@ void init()
    studentTestData[3].majors = "Nha May";
    studentTestData[4].majors = "Hien Dai";
 
-   studentTestData[0].entryScores = 23;
-   studentTestData[1].entryScores = 22;
-   studentTestData[2].entryScores = 2;
-   studentTestData[3].entryScores = 43;
-   studentTestData[4].entryScores = 12;
+   studentTestData[0].entryScores = 500;
+   studentTestData[1].entryScores = 900;
+   studentTestData[2].entryScores = 765;
+   studentTestData[3].entryScores = 600;
+   studentTestData[4].entryScores = 895;
 
-   studentTestData[0].birthYear = 2003;
-   studentTestData[1].birthYear = 1997;
-   studentTestData[2].birthYear = 1996;
-   studentTestData[3].birthYear = 2005;
-   studentTestData[4].birthYear = 2009;
+   studentTestData[0].cumulativeScore = 832;
+   studentTestData[1].cumulativeScore = 733;
+   studentTestData[2].cumulativeScore = 1000;
+   studentTestData[3].cumulativeScore = 678;
+   studentTestData[4].cumulativeScore = 456;
+
 
    list_initList(&mainBuffer, 0);
    list_initList(&sreachBuffer, 0);

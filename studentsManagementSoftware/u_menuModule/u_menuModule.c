@@ -35,7 +35,7 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 		{
 		case 0:
 			// Stop Program //
-			printf("\n======================== Stop Program ============================");
+			printf("\n======================== Stop Manage Student Program ============================");
 			break;
 		case 1:
 			printAllBuffer_student(mainBuffer);
@@ -58,6 +58,72 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 		case 6:
 			// Menu Search Data //
 			menu_Search(mainBuffer, sreachBuffer);
+			break;
+		default:
+			// Default //
+			defaultPrintf();
+			break;
+		}
+	} while (menu_choice != 0);
+}
+
+void menu_dataProcessing(list_T* mainBuffer)
+{
+	int menu_choice;
+	int index;
+	int numberOfElement;
+	do
+	{
+		system("cls");
+		printf("\n1. Add new student");
+		printf("\n2. Delete student");
+		printf("\n3. Modify student");
+		printf("\n0. Out Menu Data Processing");
+		printf("\nYour choice: ");
+
+		(void)scanf("%d", &menu_choice);
+
+		switch (menu_choice)
+		{
+		case 0:
+			// Out Menu Data Processin //
+			break;
+		case 1:
+			// Add Student //
+			system("cls");
+			add_addStudent(mainBuffer);
+			printf("Add Successfully!\n");
+			press_anyKey();
+			break;
+		case 2:
+			// Delete Student //
+			numberOfElement = list_size(mainBuffer);
+			do
+			{
+				system("cls");
+				printAllBuffer_student(mainBuffer);
+				printf("Nhap Index Sinh Vien Muon Xoa: ");
+				(void)scanf("%d", &index);
+			} while (index > numberOfElement);
+
+			delete_deleteStudent(mainBuffer, index);
+			printf("Delete Successfully!\n");
+			press_anyKey();
+			break;
+		case 3:
+			// Modify Student // 
+			numberOfElement = list_size(mainBuffer);
+			do
+			{
+				system("cls");
+				printAllBuffer_student(mainBuffer);
+				printf("Nhap Index Sinh Vien Muon Dieu Chinh: ");
+				(void)scanf("%d", &index);
+			} while (index > numberOfElement);
+
+			modify_modifyStudent(mainBuffer, index);
+			printf("Modify Successfully!\n");
+			press_anyKey();
 			break;
 		default:
 			// Default //
@@ -208,70 +274,6 @@ void menu_Search(list_T *mainBuffer, list_T *search_buffer)
 	} while (menu_choice != 0);
 }
 
-void menu_dataProcessing(list_T * mainBuffer)
-{
-	int menu_choice;
-	int index;
-	int numberOfElement;
-	do
-	{
-		system("cls");
-		printf("\n1. Add new student");
-		printf("\n2. Delete student");
-		printf("\n3. Modify student");
-		printf("\n0. Out Menu Data Processing");
-		printf("\nYour choice: ");
-
-		(void)scanf("%d", &menu_choice);
-
-		switch (menu_choice)
-		{
-		case 0:
-			printf("Out Menu Data Processing");
-			break;
-		case 1:
-			add_addStudent(mainBuffer);
-			break;
-		case 2:
-			//Todo: Hien thi nhap lai 
-			//Todo: Tach ham any key ...
-			printAllBuffer_student(mainBuffer);
-			numberOfElement = list_size(mainBuffer);
-			do
-			{
-				printf("Nhap Index Sinh Vien Muon Xoa: ");
-				(void)scanf("%d", &index);
-				(void)getchar();
-			} while (index > numberOfElement);
-
-			delete_deleteStudent(mainBuffer, index);
-			printf("Delete Successfully!");
-			printf("\nPress any key to continue...");
-			(void)getchar();
-			break;
-		case 3:
-			//Todo: Hien thi nhap lai 
-			//Todo: Tach ham any key ...
-			printAllBuffer_student(mainBuffer);
-			numberOfElement = list_size(mainBuffer);
-			do
-			{
-				printf("Nhap Index Sinh Vien Muon Dieu Chinh: ");
-				(void)scanf("%d", &index);
-				(void)getchar();
-			} while (index > numberOfElement);
-			modify_modifyStudent(mainBuffer, index);
-			printf("Modify Successfully!");
-			printf("\nPress any key to continue...");
-			(void)getchar();
-			break;
-		default:
-			defaultPrintf();
-			break;
-		}
-	} while (menu_choice != 0);
-}
-
 // Các hàm sort
 void menu_sortMajor(list_T *buffer)
 {
@@ -289,16 +291,20 @@ void menu_sortMajor(list_T *buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort major //
 			break;
 		case 1:
+			// Sort increase major //
 			sort_incr_majors(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease major //
 			sort_decr_majors(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default //
 			defaultPrintf();
 			break;
 		}
@@ -322,20 +328,23 @@ void menu_sortEntryScore(list_T *buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort entryscore //
 			break;
 		case 1:
+			// Sort increase entryscore //
 			sort_incr_entryScores(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease entryscore //
 			sort_decr_entryScores(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default // 
 			defaultPrintf();
 			break;
 		}
-
 	} while (menu_choice != 0);
 }
 
@@ -355,16 +364,20 @@ void menu_sortFullName(list_T *buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort fullname //
 			break;
 		case 1:
+			// Sort increase fullname // 
 			sort_incr_fullName(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease fullname //
 			sort_decr_fullName(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default //
 			defaultPrintf();
 			break;
 		}
@@ -387,16 +400,20 @@ void menu_sortCumulativeScore(list_T *buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort cumulativescore //
 			break;
 		case 1:
+			// Sort increase cumulativescore //
 			sort_incr_cumulativeScore(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease cumulatives //
 			sort_decr_cumulativeScore(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default //
 			defaultPrintf();
 			break;
 		}
@@ -419,16 +436,20 @@ void menu_sortDepartment(list_T *buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort department //
 			break;
 		case 1:
+			// Sort increase department //
 			sort_incr_department(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease department //
 			sort_decr_department(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default //
 			defaultPrintf();
 			break;
 		}
@@ -451,16 +472,20 @@ void menu_sortBirthYear(list_T *buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort birthyear //
 			break;
 		case 1:
+			// Sort increase birthyear //
 			sort_incr_birthYear(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease birthyear //
 			sort_decr_birthYear(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default //
 			defaultPrintf();
 			break;
 		}
@@ -483,16 +508,20 @@ void menu_sortHomeTown(list_T* buffer)
 		switch (menu_choice)
 		{
 		case 0:
+			// Out sort hometown //
 			break;
 		case 1:
+			// Sort increase hometown //
 			sort_incr_homeTown(buffer);
 			sortPrintf();
 			break;
 		case 2:
+			// Sort decrease hometown //
 			sort_decr_homeTown(buffer);
 			sortPrintf();
 			break;
 		default:
+			// Default //
 			defaultPrintf();
 			break;
 		}
@@ -504,12 +533,14 @@ void sortPrintf()
 	printf("Sort Successfully!\n");
 	press_anyKey();
 }
+
 void press_anyKey()
 {
 	(void)getchar();
 	printf("Press any key to continue...");
 	(void)getchar();
 }
+
 void defaultPrintf()
 {
 	printf("Enter choice again");
@@ -517,12 +548,14 @@ void defaultPrintf()
 	printf("\nPress any key to continue...");
 	(void)getchar();
 }
+
 void inputSubString(char subString[])
 {
 	printf("Nhap ky tu muon tim kiem: ");
 	(void)getchar();
 	(void)scanf("%[^\n]s", subString);
 }
+
 void inputNumber(int* number)
 {
 	printf("Nhap diem muon tim kiem:");

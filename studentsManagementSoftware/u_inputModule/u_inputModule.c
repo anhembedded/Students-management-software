@@ -28,11 +28,11 @@ studentInputBuffer_T input_NhapSinhVien()
 	(void)getchar();
 	(void)scanf("%[^\n]s", &student.majors);
 
-	printf("\nCumulativeScore sinh vien: ");
-	(void)scanf("%d", &student.cumulativeScore);
-
-	printf("\nEntryScores sinh vien: ");
+	printf("\nEntryScores sinh vien(theo he so 1000): ");
 	(void)scanf("%d", &student.entryScores);
+
+	printf("\nCumulativeScore sinh vien(theo he so 1000): ");
+	(void)scanf("%d", &student.cumulativeScore);
 
 	return student;
 }
