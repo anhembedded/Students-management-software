@@ -6,7 +6,6 @@
 #define STUDENTS_MANAGEMENT_SOFTWARE_MAIN_H
 
 #include <stdio.h>
-#include <assert.h>
 #include "u_lib/common.h"
 #include "studentsManagementSoftware/u_addModule/u_addModule.h"
 #include "studentsManagementSoftware/u_dataStruct.h"

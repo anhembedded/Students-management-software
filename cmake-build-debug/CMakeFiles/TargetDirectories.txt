@@ -1,0 +1,3 @@
+C:/Users/hoang/source/repos/anhembedded/Students-management-software/cmake-build-debug/CMakeFiles/Students_management_software.dir
+C:/Users/hoang/source/repos/anhembedded/Students-management-software/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/hoang/source/repos/anhembedded/Students-management-software/cmake-build-debug/CMakeFiles/rebuild_cache.dir

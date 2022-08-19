@@ -1,13 +1,6 @@
-/**
-  ******************************************************************************
-  * @file    u_sortModule.h
-  * @author  TranHoangAnh
-  * @brief
-  *
-  ==============================================================================
-                        ##### LOAD MODULE #####
-  ==============================================================================
-  */
+//
+// Created by pcx on 8/13/2022.
+//
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_SORTMODULE_H
@@ -18,9 +11,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-
-static void upper2LowerString(char* parmString);
 
 void sort_incr_cumulativeScore(list_T *buffer_ptr);
 void sort_decr_cumulativeScore(list_T *buffer_ptr);
@@ -40,8 +30,6 @@ void sort_decr_fullName(list_T *buffer_ptr);
 void sort_decr_department(list_T *buffer_ptr);
 void sort_decr_homeTown(list_T *buffer_ptr);
 void sort_decr_majors(list_T *buffer_ptr);
-
-
 
 
 

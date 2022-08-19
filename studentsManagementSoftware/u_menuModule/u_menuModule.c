@@ -1,13 +1,6 @@
-﻿/**
-  ******************************************************************************
-  * @file    u_menuModule.h
-  * @author
-  * @brief
-  *
-  ==============================================================================
-						##### MENU MODULE #####
-  ==============================================================================
-  */
+﻿//
+// Created by pcx on 8/13/2022.
+//
 
 #include "u_menuModule.h"
 #include "studentsManagementSoftware/u_displayModule/u_displayModule.h"
@@ -22,7 +15,7 @@
 char menu_waitForInput()
 {
 	char menu_option;
-	(void)scanf("%c", &menu_option);
+	scanf("%c", &menu_option);
 
 	return menu_option;
 }
@@ -44,7 +37,7 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 		printf("\n0. Quit program!");
 		printf("\nYour choice: ");
 
-		(void)scanf("%d", &Choice);
+		scanf("%d", &Choice);
 
 		switch (Choice)
 		{
@@ -90,7 +83,7 @@ void menu_Sort(list_T *buffer)
 		printf("\n6. Menu sort birthyear");
 		printf("\n0. Out Menu sort data");
 		printf("\nYour choice: ");
-		(void)scanf("%d", &choice);
+		scanf("%d", &choice);
 		switch (choice)
 		{
 		case 0:
@@ -146,35 +139,29 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer)
 		case 1:
 			// Todo: get Substring -- MENU
 			sreach_sreach_majors(mainBuffer, sreach_buffer, subString);
-			printAllBuffer_student(sreach_buffer);
 			break;
 		case 2:
 			// Todo: get Substring -- MENU
 			// Todo: implement this - SREACH
-		   // sreach_sreach_entryScores(mainBuffer, sreach_buffer, number);
-			printAllBuffer_student(sreach_buffer);
+           // sreach_sreach_entryScores(mainBuffer, sreach_buffer, number);
 			break;
 		case 3:
 			// SearchFullName();
 			sreach_sreach_fullName(mainBuffer, sreach_buffer, subString);
-			printAllBuffer_student(sreach_buffer);
 			break;
 		case 4:
 			//	SearchCumulativeScore();
 			// Todo: implement this - SREACH
-		  // sreach_sreach_cumulativeScore(mainBuffer, sreach_buffer, number);
-			printAllBuffer_student(sreach_buffer);
+          // sreach_sreach_cumulativeScore(mainBuffer, sreach_buffer, number);
 			break;
 		case 5:
 			// SearchDepartment();
 			//sreach_sreach_department(mainBuffer, sreach_buffer, subString);
-			printAllBuffer_student(sreach_buffer);
 			break;
 		case 6:
 			// SearchBirthYear();
 			// Todo: implement this - SREACH
-			//sreach_sreach_birthYear(mainBuffer, sreach_buffer, number);
-			printAllBuffer_student(sreach_buffer);
+            //sreach_sreach_birthYear(mainBuffer, sreach_buffer, number);
 			break;
 		default:
 			printf("\nEnter choice again!");
@@ -194,7 +181,7 @@ void menu_dataProcessing(list_T * mainBuffer)
 		printf("\n3. Modify student");
 		printf("\n0. Out Menu Data Processing");
 		printf("\nYour choice: ");
-		(void)scanf("%d", &choice);
+		scanf("%d", &choice);
 
 		switch (choice)
 		{

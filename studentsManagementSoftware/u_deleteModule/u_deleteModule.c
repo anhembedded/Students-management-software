@@ -1,21 +1,13 @@
-/**
-  ******************************************************************************
-  * @file    u_deleteModule.c
-  * @author  TranHoangAnh
-  * @brief
-  *
-  ==============================================================================
-						##### DELETE MODULE #####
-  ==============================================================================
-  */
-
+//
+// Created by pcx on 8/13/2022.
+//
 
 #include "u_deleteModule.h"
 #include "stdlib.h"
 
 static void delete_freeDataOfStringPtr(list_T *buffer, int32_t postOnBuffer)
 {
-	list_elementType_T *temp;
+	LIST_ELEMENT_TYPE_T *temp;
 	temp = list_goToPos(buffer, postOnBuffer);
 	free(temp->data.fullName);
 	free(temp->data.homeTown);
