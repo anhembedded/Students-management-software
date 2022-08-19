@@ -9,30 +9,20 @@
 studentInputBuffer_T input_NhapSinhVien()
 {
 	studentInputBuffer_T student;
-	printf("\nfullName sinh vien: ");
-	(void)getchar();
-	(void)scanf("%[^\n]s", &student.fullName);
 
-	printf("\nBirthyear sinh vien: ");
-	(void)scanf("%d", &student.birthYear);
+	input_fullName(&student);
 
-	printf("\nHometown sinh vien: ");
-	(void)getchar();
-	(void)scanf("%[^\n]s", &student.homeTown);
+	input_birthYear(&student);
 
-	printf("\nDepartment sinh vien: ");
-	(void)getchar();
-	(void)scanf("%[^\n]s", &student.department);
+	input_homeTown(&student);
 
-	printf("\nMajor sinh vien: ");
-	(void)getchar();
-	(void)scanf("%[^\n]s", &student.majors);
+	input_department(&student);
 
-	printf("\nEntryScores sinh vien(theo he so 1000): ");
-	(void)scanf("%d", &student.entryScores);
+	input_major(&student);
 
-	printf("\nCumulativeScore sinh vien(theo he so 1000): ");
-	(void)scanf("%d", &student.cumulativeScore);
+	input_entryScore(&student);
+
+	input_cumulativeScore(&student);
 
 	return student;
 }
@@ -102,4 +92,57 @@ student_T input_allocateDataStudent_T(student_T *std_ptr)
 	return temp;
 }
 
+void input_fullName(studentInputBuffer_T* student)
+{
+	printf("\nfullName sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", student->fullName);
+}
 
+void input_birthYear(studentInputBuffer_T* student)
+{
+	printf("\nBirthyear sinh vien: ");
+	(void)scanf("%d", &student->birthYear);
+}
+
+void input_homeTown(studentInputBuffer_T* student)
+{
+	printf("\nHometown sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", student->homeTown);
+}
+
+void input_department(studentInputBuffer_T* student)
+{
+	printf("\nDepartment sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", student->department);
+}
+
+void input_major(studentInputBuffer_T* student)
+{
+	printf("\nMajor sinh vien: ");
+	(void)getchar();
+	(void)scanf("%[^\n]s", student->majors);
+}
+
+void input_entryScore(studentInputBuffer_T* student)
+{
+	printf("\nEntryScores sinh vien(theo he so 1000): ");
+	(void)scanf("%d", &student->entryScores);
+}
+
+void input_cumulativeScore(studentInputBuffer_T* student)
+{
+	printf("\nCumulativeScore sinh vien(theo he so 1000): ");
+	(void)scanf("%d", &student->cumulativeScore);
+}
+
+char* input_stringAllocate(char* string)
+{
+	uint32_t sizeOfString = 0;
+	sizeOfString = strlen(string);
+	char* string_Temp = malloc(sizeOfString+1);
+	strcpy(string_Temp, string);
+	return string_Temp;
+}

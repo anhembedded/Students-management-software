@@ -13,7 +13,7 @@ void menu_Search(list_T *mainBuffer, list_T *sreach_buffer);
 void menu_dataProcessing(list_T * mainBuffer);
 
 
-
+void menu_Modify(list_T* buffer, int index);
 void menu_sortMajor(list_T *buffer);
 void menu_sortEntryScore(list_T *buffer);
 void menu_sortFullName(list_T *buffer);
@@ -24,6 +24,7 @@ void menu_sortHomeTown(list_T* buffer);
 
 void press_anyKey();
 void defaultPrintf();
+void modifyPrintf();
 void sortPrintf();
 void inputSubString(char []);
 void inputNumber(int*);

@@ -104,7 +104,7 @@ void menu_dataProcessing(list_T* mainBuffer)
 				printAllBuffer_student(mainBuffer);
 				printf("Nhap Index Sinh Vien Muon Xoa: ");
 				(void)scanf("%d", &index);
-			} while (index > numberOfElement);
+			} while (index >= numberOfElement);
 
 			delete_deleteStudent(mainBuffer, index);
 			printf("Delete Successfully!\n");
@@ -119,17 +119,72 @@ void menu_dataProcessing(list_T* mainBuffer)
 				printAllBuffer_student(mainBuffer);
 				printf("Nhap Index Sinh Vien Muon Dieu Chinh: ");
 				(void)scanf("%d", &index);
-			} while (index > numberOfElement);
+			} while (index >= numberOfElement);
 
-			modify_modifyStudent(mainBuffer, index);
-			printf("Modify Successfully!\n");
-			press_anyKey();
+			menu_Modify(mainBuffer,index);
 			break;
 		default:
 			// Default //
 			defaultPrintf();
 			break;
 		}
+	} while (menu_choice != 0);
+}
+
+void menu_Modify(list_T* buffer, int index)
+{
+	int menu_choice;
+	do
+	{
+		printf("\n1. Modify fullname");
+		printf("\n2. Modify birthyear");
+		printf("\n3. Modify hometown");
+		printf("\n4. Modify department");
+		printf("\n5. Modify major ");
+		printf("\n6. Modify entryscores");
+		printf("\n7. Modify cumulativescore ");
+		printf("\n0. Out Menu modify data");
+		printf("\nYour choice: ");
+
+		(void)scanf("%d", &menu_choice);
+
+		switch (menu_choice)
+		{
+			case 0:
+				break;
+			case 1:
+				modify_modifyFullName(buffer,index);
+				modifyPrintf();
+				break;
+			case 2:
+				modify_modifyBirthYear(buffer, index);
+				modifyPrintf();
+				break;
+			case 3:
+				modify_modifyHomeTown(buffer, index);
+				modifyPrintf();
+				break;
+			case 4:
+				modify_modifyDepartment(buffer, index);
+				modifyPrintf();
+				break;
+			case 5:
+				modify_modifyMajor(buffer, index);
+				modifyPrintf();
+				break;
+			case 6:
+				modify_modifyEntryScore(buffer, index);
+				modifyPrintf();
+				break;
+			case 7:
+				modify_modifyCumulativeScore(buffer, index);
+				modifyPrintf();
+				break;
+			default:
+				defaultPrintf();
+				break;
+		}
+
 	} while (menu_choice != 0);
 }
 
@@ -526,6 +581,12 @@ void menu_sortHomeTown(list_T* buffer)
 			break;
 		}
 	} while (menu_choice != 0);
+}
+
+void modifyPrintf()
+{
+	printf("Modify Successfully!\n");
+	press_anyKey();
 }
 
 void sortPrintf()
