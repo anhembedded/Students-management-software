@@ -1,22 +1,24 @@
 
+
 /*
  * Created on Wed Aug 17 2022
  *
  *
  */
 
+
 #include "main.h"
+
 
 student_T studentTestData[10];
 list_T mainBuffer;
 list_T sreachBuffer;
 uint32_t watchData;
-list_iteratorType_T iter;
+LIST_ITERATOR_TYPE_T iter;
 // JUST a Test Function
-
-
 void init()
 {
+
    studentTestData[0].fullName = "Bich Tuyen";
    studentTestData[1].fullName = "Viet Nga";
    studentTestData[2].fullName = "Thu Trinh";
@@ -61,24 +63,24 @@ void init()
 
    list_initList(&mainBuffer, 0);
    list_initList(&sreachBuffer, 0);
-  
+   iter = list_back(&mainBuffer);
    watchData = list_size(&mainBuffer);
 
    for (int i = 0; i <= 4; i++)
    {
       add_addStudentData(&mainBuffer, &studentTestData[i]);
       watchData = list_size(&mainBuffer);
+      iter = list_back(&mainBuffer);
    }
 }
-
-char* name = "TranHoangAnh";
 
 int main()
 {
     //cmt
    init();
+   watchData = list_size(&mainBuffer);
+   menu_mainMenu(&mainBuffer, &sreachBuffer);
 
-  
    return 0;
 }
 

@@ -83,11 +83,10 @@ extern "C" {
   /** Get the absolute value of x. **/
 #define ABS(x) ((x) < 0 ? -(x) : (x))
 
-	/**
+    /**
    * @}
    */
 	
-
 #ifdef __cplusplus
 }
 #endif

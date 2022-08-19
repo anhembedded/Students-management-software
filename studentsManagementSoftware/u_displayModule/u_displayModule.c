@@ -1,20 +1,13 @@
-/**
-  ******************************************************************************
-  * @file    u_displayModule.c
-  * @author  TranHoangAnh
-  * @brief
-  *
-  ==============================================================================
-                        ##### DISPLAY MODULE #####
-  ==============================================================================
-  */
+//
+// Created by pcx on 8/13/2022.
+//
 
 #include "u_displayModule.h"
 #include "stdio.h"
 
 void printAllBuffer_cumulativeScore(list_T *buffer)
 {
-    list_iteratorType_T iter;
+    LIST_ITERATOR_TYPE_T iter;
     iter = buffer->beginElement->next; // index 0;
     while (iter != NULL)
     {
@@ -25,7 +18,8 @@ void printAllBuffer_cumulativeScore(list_T *buffer)
 
 void printAllBuffer_fullName(list_T *buffer)
 {
-    list_iteratorType_T iter;
+
+    LIST_ITERATOR_TYPE_T iter;
     iter = buffer->beginElement->next; // index 0;
 
     while (iter != NULL)
@@ -37,26 +31,23 @@ void printAllBuffer_fullName(list_T *buffer)
 
 void printAllBuffer_student(list_T *buffer)
 {
-    list_iteratorType_T iter;
+    LIST_ITERATOR_TYPE_T iter;
     uint32_t counter = 0;
     iter = buffer->beginElement->next; // index 0;
-    if (counter != 0)
-    {
-        while (iter != NULL)
-        {
 
-            printf("%d |    ", counter);
-            printf("%s |    ", iter->data.fullName);
-            printf("%d |    ", iter->data.birthYear);
-            printf("%s |    ", iter->data.homeTown);
-            printf("%s |    ", iter->data.department);
-            printf("%s |    ", iter->data.majors);
-            printf("%d |    ", iter->data.entryScores);
-            printf("%d |    ", iter->data.cumulativeScore);
-            printf("\n");
-            iter = iter->next;
-            counter++;
-        }
+    while (iter != NULL)
+    {
+
+        printf("%d |    ", counter);
+        printf("%s |    ", iter->data.fullName);
+        printf("%d |    ", iter->data.birthYear);
+        printf("%s |    ", iter->data.homeTown);
+        printf("%s |    ", iter->data.department);
+        printf("%s |    ", iter->data.majors);
+        printf("%d |    ", iter->data.entryScores);
+        printf("%d |    ", iter->data.cumulativeScore);
+        printf("\n");
+        iter = iter->next;
+        counter++;
     }
-   
 }
