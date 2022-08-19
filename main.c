@@ -8,14 +8,14 @@
 
 
 #include "main.h"
-
+student_T temp;
 student_T studentTestData[10];
 list_T mainBuffer;
 list_T sreachBuffer;
 uint32_t watchData;
 LIST_ITERATOR_TYPE_T iter;
 
-// JUST a Test Function
+// Initialization
 void init()
 {
    studentTestData[0].fullName = "Tran Bich Tuyen";
@@ -76,10 +76,8 @@ void init()
 
 int main()
 {
-    //cmt
-   init();
+   //init();
    watchData = list_size(&mainBuffer);
    menu_mainMenu(&mainBuffer, &sreachBuffer);
    return 0;
 }
-

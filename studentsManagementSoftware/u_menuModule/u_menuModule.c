@@ -11,9 +11,11 @@
 #include "studentsManagementSoftware/u_deleteModule/u_deleteModule.h"
 #include "studentsManagementSoftware/u_modifyModule/u_modifyModule.h"
 #include "studentsManagementSoftware/u_searchModule/u_searchModule.h"
+#include "studentsManagementSoftware/u_fileManipulateModule/u_fileManipulateModule.h"
 
 void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 {
+	student_T temp;
 	int menu_choice;
 	do
 	{	
@@ -43,9 +45,25 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 			break;
 		case 2:
 			// todo: SaveData
+			file_saveFile(mainBuffer);
 			break;
 		case 3:
 			// todo: loadData
+			unsigned int u4_totalStudent;	
+			u4_totalStudent = lineCount(filePath_name) -1;
+			studentInputBuffer_T studentReadBuffer;
+			student_T studentemp;
+
+			if (0 < u4_totalStudent) {
+				for (unsigned int index = 0; index < u4_totalStudent; index++) {
+					file_read_aStudent(&studentReadBuffer, index);
+					studentemp = input_allocateData(&studentReadBuffer);
+					list_pushBack(mainBuffer, studentemp);
+				}
+			}
+			else {
+				printf("There is no student to read\n");
+			}
 			break;
 		case 4:
 			// Menu Data Processing //
@@ -151,40 +169,48 @@ void menu_Modify(list_T* buffer, int index)
 		switch (menu_choice)
 		{
 			case 0:
+				// Out Menu modify data //
 				break;
 			case 1:
+				// Modify Full Name //
 				modify_modifyFullName(buffer,index);
 				modifyPrintf();
 				break;
 			case 2:
+				// Modify BirthYear //
 				modify_modifyBirthYear(buffer, index);
 				modifyPrintf();
 				break;
 			case 3:
+				// Modify HomeTown // 
 				modify_modifyHomeTown(buffer, index);
 				modifyPrintf();
 				break;
 			case 4:
+				// Modify Department //
 				modify_modifyDepartment(buffer, index);
 				modifyPrintf();
 				break;
 			case 5:
+				// Modify Major //
 				modify_modifyMajor(buffer, index);
 				modifyPrintf();
 				break;
 			case 6:
+				// Modify EntryScore //
 				modify_modifyEntryScore(buffer, index);
 				modifyPrintf();
 				break;
 			case 7:
+				// Modify CumulativeScore //
 				modify_modifyCumulativeScore(buffer, index);
 				modifyPrintf();
 				break;
 			default:
+				// Default //
 				defaultPrintf();
 				break;
 		}
-
 	} while (menu_choice != 0);
 }
 

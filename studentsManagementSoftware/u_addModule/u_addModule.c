@@ -1,10 +1,22 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_addModule.c
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+						##### ADD MODULE #####
+  ==============================================================================
+  */
 
 #include "u_addModule.h"
 #include "studentsManagementSoftware/u_inputModule/u_inputModule.h"
 
+/**
+  * @brief  Add a student to Buffer via console.
+  * @param  buffer			pointer to the Buffer
+  * @retval void
+  */
 void add_addStudent(list_T *buffer)
 {
 	studentInputBuffer_T studentInputBufferTemp;
@@ -14,6 +26,14 @@ void add_addStudent(list_T *buffer)
 	list_pushBack(buffer, studentemp);
 }
 
+
+/**
+  * @brief	Add a student to Buffer via pointer to student_T Object
+  * @param  buffer			pointer to the Buffer
+  * @param  newStudent		pointer to the student_T object
+  * @code
+  * @retval void
+  */
 void add_addStudentData(list_T *buffer, student_T *newStudent)
 {
 	student_T studentemp;

@@ -19,7 +19,6 @@ void input_department(studentInputBuffer_T*);
 void input_major(studentInputBuffer_T*);
 void input_entryScore(studentInputBuffer_T*);
 void input_cumulativeScore(studentInputBuffer_T*);
-
 char* input_stringAllocate(char* string);
 
 #endif //STUDENTS_MANAGEMENT_SOFTWARE_U_INPUTMODULE_H

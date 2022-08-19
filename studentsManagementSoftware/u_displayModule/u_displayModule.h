@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_displayModule.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### DISPLAY MODULE #####
+  ==============================================================================
+  */
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_DISPLAYMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_DISPLAYMODULE_H

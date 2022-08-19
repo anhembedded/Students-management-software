@@ -16,5 +16,5 @@ void buffer_Init(buffer_T *bf_ptr)
 uint32_t buffer_size(buffer_T *bf)
 {
     return list_size(bf);
-    ;
+    
 }

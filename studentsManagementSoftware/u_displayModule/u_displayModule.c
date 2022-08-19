@@ -1,22 +1,30 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_displayModule.c
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+                        ##### DISPLAY MODULE #####
+  ==============================================================================
+  */
 
 #include "u_displayModule.h"
 #include "stdio.h"
 
 void printAllBuffer_student(list_T *buffer)
 {
-    //Todo: Check buffer empty 
     system("cls");
     LIST_ITERATOR_TYPE_T iter;
     uint32_t counter = 0;
     iter = buffer->beginElement->next; // index 0;
 
+    // Print Header //
     printf("%-3s |    %-20s |    %-10s |    %-20s |    %-20s |    %-20s |    %-15s |    %-15s |    \n\n",
         "STT", "Full Name", "BirthYear", "HomeTown", "Department", "Major",
         "EntryScore", "CumulativeScore");
 
+    // Print Student //
     while (iter != NULL)
     {
         printf("%-3d |    ", counter);

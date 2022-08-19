@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\studentsManagementSoftware",
+    "\\studentsManagementSoftware\\dataStorage",
+    "\\studentsManagementSoftware\\u_addModule",
     "\\studentsManagementSoftware\\u_dataBufferModule",
-    "\\studentsManagementSoftware\\u_displayModule",
+    "\\studentsManagementSoftware\\u_deleteModule",
     "\\studentsManagementSoftware\\u_inputModule",
+    "\\studentsManagementSoftware\\u_loadModule",
     "\\studentsManagementSoftware\\u_menuModule",
-    "\\studentsManagementSoftware\\u_modifyModule",
-    "\\studentsManagementSoftware\\u_saveModule",
-    "\\studentsManagementSoftware\\u_searchModule",
-    "\\studentsManagementSoftware\\u_sortModule"
+    "\\studentsManagementSoftware\\u_searchModule"
   ],
-  "SelectedNode": "\\studentsManagementSoftware\\u_inputModule\\u_inputModule.c",
+  "SelectedNode": "\\studentsManagementSoftware\\dataStorage\\filePath.c",
   "PreviewInSolutionExplorer": false
 }

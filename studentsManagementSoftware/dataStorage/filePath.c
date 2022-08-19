@@ -4,11 +4,10 @@
 
 #include "filePath.h"
 
-const char * filePath_fullName = "E:\\Project\\Fsoft Embedded training course\\Students - management - software\\studentsManagementSoftware\\dataStorage\\fullName.txt";
-const char * filePath_birthYear = "../studentsManagementSoftware/dataStorage/birthYear.txt";
-const char * filePath_cumulativeScore = "../studentsManagementSoftware/dataStorage/cumulativeScore.dat";
-const char * filePath_department ="../studentsManagementSoftware/dataStorage/department.dat";
-const char * filePath_entryScores = "../studentsManagementSoftware/dataStorage/entryScores.dat";
-const char * filePath_homeTown = "../studentsManagementSoftware/dataStorage/homeTown.dat";
-const char * filePath_majors = "../studentsManagementSoftware/dataStorage/majors.dat";
-
+const char  filePath_name[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_name.txt";
+const char  filePath_yob[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_yob.txt";
+const char  filePath_pob[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_pob.txt";
+const char  filePath_faculty[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_faculty.txt";
+const char  filePath_department[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_department.txt";
+const char  filePath_entrance_s[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_entrance_s.txt";
+const char  filePath_gpa[] = "F:\\Study University\\Semester_7\\Embedded_Developer\\Mini_Project\\testing\\testing_gpa.txt";

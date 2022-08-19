@@ -1,6 +1,13 @@
-//
-// Created by pcx on 8/13/2022.
-//
+/**
+  ******************************************************************************
+  * @file    u_deleteModule.h
+  * @author  TranHoangAnh
+  * @brief
+  *
+  ==============================================================================
+						##### DELETE MODULE #####
+  ==============================================================================
+  */
 
 #ifndef STUDENTS_MANAGEMENT_SOFTWARE_U_DELETEMODULE_H
 #define STUDENTS_MANAGEMENT_SOFTWARE_U_DELETEMODULE_H

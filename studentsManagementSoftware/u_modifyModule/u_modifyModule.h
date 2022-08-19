@@ -9,7 +9,6 @@
 #include "studentsManagementSoftware/u_addModule/u_addModule.h"
 #include "studentsManagementSoftware/u_inputModule/u_inputModule.h"
 
-//void modify_modifyStudent(list_T *buffer, int32_t positions);
 void modify_modifyFullName(list_T* buffer, int32_t positions);
 void modify_modifyBirthYear(list_T* buffer, int32_t positions);
 void modify_modifyHomeTown(list_T* buffer, int32_t positions);
